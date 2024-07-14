@@ -1,19 +1,40 @@
 # Nevica
 
-## Status
+Nixvim based text editor inspired by Neve.
 
-| Language                                | LSP              | Formatter                   | Linter        | Debugger          | Support  |
-| --------------------------------------- | ---------------- | --------------------------- | ------------- | ----------------- | -------- |
-| <i class="devicon-c-plain"></i>         | clangd           | clang_format                | cppcheck      | WIP               | No Debug |
-| <i class="devicon-cplusplus-plain"></i> | clangd           | clang_format                | cppcheck      | WIP               | No Debug |
-| Rust                                    | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              | Complete |
-| Golang                                  | gopls            | gofumpt, goimports, golines | golangci_lint | delve             | Complete |
-| Java                                    | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | Complete |
-| typescript                              | typescript-tools | prettier                    | eslint        | WIP               | No Debug |
-| javascript                              | typescript-tools | prettier                    | eslint        | WIP               | No Debug |
-| python                                  | pyright, ruff    | black                       | pylint        | dap-python        | Complete |
-| lua                                     | lua-ls           | stylelua                    | selene        | /                 | Complete |
-| Nix                                     | nil-ls           | alejandra                   | statix        | /                 | Complete |
-| Docker                                  | dockerls         | dockerls                    | hadolint      | /                 | Complete |
-| Docker Compose                          | WIP              |                             | /             | /                 | WIP      |
-| Bash                                    | bashls           | shfmt                       | zsh           | WIP               | No Debug |
+## Support
+
+- ✅**Full Support** (aka. LSP, Formatter, Linter, Debugger)
+  - `Rust`
+  - `Go`
+  - `Java`
+  - `Python`
+- ✅**Full Support Minor**
+  - `Lua`
+  - `Nix`
+  - `Dockerfile`
+  - `Bash/Zsh`
+- **WIP**
+  - `C`
+  - `Cpp`
+  - `typescript`
+  - `javascript`
+  - `Docker compose`
+
+## Support Status
+
+| Language       | LSP              | Formatter                   | Linter        | Debugger          |
+| -------------- | ---------------- | --------------------------- | ------------- | ----------------- |
+| C              | clangd           | clang_format                | cppcheck      | WIP               |
+| Cpp            | clangd           | clang_format                | cppcheck      | WIP               |
+| Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              |
+| Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             |
+| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug |
+| typescript     | typescript-tools | prettier                    | eslint        | WIP               |
+| javascript     | typescript-tools | prettier                    | eslint        | WIP               |
+| python         | pyright, ruff    | black                       | pylint        | debugpy           |
+| lua            | lua-ls           | stylelua                    | selene        | /                 |
+| Nix            | nil-ls           | alejandra                   | statix        | /                 |
+| Docker         | dockerls         | dockerls                    | hadolint      | /                 |
+| Docker Compose | WIP              | WIP                         | WIP           | /                 |
+| Bash           | bashls           | shfmt                       | zsh           | /                 |

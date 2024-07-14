@@ -7,9 +7,14 @@
       group = "+";
       separator = ""; # ➜
     };
-    # registrations = {
-    #   "<leader>t" = " Terminal";
-    # };
+    registrations = {
+      #   "<leader>t" = " Terminal";
+      "<leader>d" = "󰃤 Debugger";
+      "<leader>f" = " Find";
+      "<leader>g" = "󰊢 Git";
+      "<leader>s" = " Whichkey";
+      "<leader>u" = "󰔚 Miscellaneous";
+    };
     window = {
       border = "none";
       winblend = 0;
