@@ -6,5 +6,8 @@
     ./telescope.nix
     ./tmux-navigator.nix
     ./codeium.nix
+    ./neotest.nix
+    ./neodev.nix
+    ./nvim-autopairs.nix
   ];
 }

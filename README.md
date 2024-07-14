@@ -16,9 +16,9 @@ Nixvim based text editor inspired by Neve.
   - `Nix`
   - `Dockerfile`
   - `Bash/Zsh`
+  - `Typescript`
+  - `Javascript`
 - **WIP**
-  - `typescript`
-  - `javascript`
   - `Docker compose`
 
 ## Support Status
@@ -30,9 +30,9 @@ Nixvim based text editor inspired by Neve.
 | Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              |
 | Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             |
 | Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug |
-| typescript     | typescript-tools | prettier                    | eslint        | WIP               |
-| javascript     | typescript-tools | prettier                    | eslint        | WIP               |
 | python         | pyright, ruff    | black                       | pylint        | debugpy           |
+| typescript     | typescript-tools | prettier                    | eslint        | /                 |
+| javascript     | typescript-tools | prettier                    | eslint        | /                 |
 | lua            | lua-ls           | stylelua                    | selene        | /                 |
 | Nix            | nil-ls           | alejandra                   | statix        | /                 |
 | Docker         | dockerls         | dockerls                    | hadolint      | /                 |
