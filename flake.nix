@@ -84,32 +84,6 @@
           nevica-cc = nvimCC;
           nevica-python = nvimPython;
         };
-        apps = {
-          nevica-full = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-full}/bin/nvim";
-          };
-          nevica-go = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-go}/bin/nvim";
-          };
-          nevica-rust = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-rust}/bin/nvim";
-          };
-          nevica-java = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-java}/bin/nvim";
-          };
-          nevica-cc = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-cc}/bin/nvim";
-          };
-          nevica-python = {
-            type = "app";
-            program = "${self.packages.${system}.nevica-python}/bin/nvim";
-          };
-        };
       };
     };
 }

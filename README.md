@@ -2,6 +2,47 @@
 
 Nixvim based text editor inspired by Neve.
 
+## How to Use
+
+You can try Nevica using nix.
+There are different versions of Nevica:
+
+**Nevica Full**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-full
+```
+
+**Nevica Go**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-go
+```
+
+**Nevica Rust**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-rust
+```
+
+**Nevica Java**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-java
+```
+
+**Nevica C/C++**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-cc
+```
+
+**Nevica Python**
+
+```bash
+nix run github:matteocavestri/nevica#nevica-python
+```
+
 ## Support
 
 - ✅**Full Support** (aka. LSP, Formatter, Linter, Debugger)
