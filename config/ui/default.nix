@@ -7,5 +7,6 @@
     ./notify.nix
     ./staline.nix
     ./neotree.nix
+    ./indent.nix
   ];
 }

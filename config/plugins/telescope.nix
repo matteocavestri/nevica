@@ -33,129 +33,100 @@
       };
     };
     keymaps = {
-      "<leader><space>" = {
-        action = "find_files";
-        options.desc = "Find project files";
-      };
-      "<leader>/" = {
-        action = "live_grep";
-        options.desc = "Grep (root dir)";
-      };
-      "<leader>:" = {
-        action = "command_history";
-        options.desc = "Command History";
-      };
-      "<leader>b" = {
-        action = "buffers";
-        options.desc = "+buffer";
-      };
+      # Find mappings
       "<leader>ff" = {
         action = "find_files";
-        options.desc = "Find project files";
+        options.desc = "Find Files";
+      };
+      "<leader>fa" = {
+        action = "live_grep";
+        options.desc = "Live Grep";
+      };
+      "<leader>fc" = {
+        action = "command_history";
+        options.desc = "Find Command History";
       };
       "<leader>fr" = {
         action = "oldfiles";
-        options.desc = "Recent";
+        options.desc = "Find Recent";
       };
       "<leader>fb" = {
         action = "buffers";
-        options.desc = "Buffers";
+        options.desc = "Find Buffers";
       };
-      "<C-p>" = {
+      "<leader>fk" = {
+        action = "keymaps";
+        options.desc = "Find Keymaps";
+      };
+      "<leader>fm" = {
+        action = "marks";
+        options.desc = "Find Mark";
+      };
+
+      # Git mappings
+      "<leader>gf" = {
         action = "git_files";
-        options.desc = "Search git files";
+        options.desc = "Git files";
       };
       "<leader>gc" = {
         action = "git_commits";
-        options.desc = "Commits";
+        options.desc = "Git Commits";
       };
       "<leader>gs" = {
         action = "git_status";
-        options.desc = "Status";
+        options.desc = "Git Status";
       };
+
+      # Search mappings
       "<leader>sa" = {
         action = "autocommands";
-        options.desc = "Auto Commands";
+        options.desc = "Search Auto Commands";
       };
       "<leader>sb" = {
         action = "current_buffer_fuzzy_find";
-        options.desc = "Buffer";
+        options.desc = "Search Buffer";
       };
       "<leader>sc" = {
         action = "command_history";
-        options.desc = "Command History";
+        options.desc = "Search Command History";
       };
       "<leader>sC" = {
         action = "commands";
-        options.desc = "Commands";
-      };
-      "<leader>sD" = {
-        action = "diagnostics";
-        options.desc = "Workspace diagnostics";
+        options.desc = "Search Commands";
       };
       "<leader>sh" = {
         action = "help_tags";
-        options.desc = "Help pages";
+        options.desc = "Serch Help pages";
       };
       "<leader>sH" = {
         action = "highlights";
         options.desc = "Search Highlight Groups";
       };
-      "<leader>sk" = {
-        action = "keymaps";
-        options.desc = "Keymaps";
-      };
       "<leader>sM" = {
         action = "man_pages";
-        options.desc = "Man pages";
-      };
-      "<leader>sm" = {
-        action = "marks";
-        options.desc = "Jump to Mark";
+        options.desc = "Search Man pages";
       };
       "<leader>so" = {
         action = "vim_options";
-        options.desc = "Options";
+        options.desc = "Search Vim options";
       };
       "<leader>sR" = {
         action = "resume";
-        options.desc = "Resume";
+        options.desc = "Search Resume";
       };
-      "<leader>uC" = {
+      "<leader>st" = {
         action = "colorscheme";
-        options.desc = "Colorscheme preview";
+        options.desc = "Search Colorscheme";
+      };
+
+      # Options
+      "<leader>wD" = {
+        action = "diagnostics";
+        options.desc = "Workspace diagnostics";
       };
     };
   };
   keymaps = [
-    {
-      mode = "n";
-      key = "<leader>fp";
-      action = "<cmd>Telescope projects<CR>";
-      options = {
-        desc = "Projects";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>sd";
-      action = "<cmd>Telescope diagnostics bufnr=0<cr>";
-      options = {
-        desc = "Document diagnostics";
-      };
-    }
-
-    {
-      mode = "n";
-      key = "<leader>st";
-      action = "<cmd>TodoTelescope<cr>";
-      options = {
-        silent = true;
-        desc = "Todo (Telescope)";
-      };
-    }
-
     # {
     #   mode = "n";
     #   key = "<leader>,";

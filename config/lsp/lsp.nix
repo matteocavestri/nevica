@@ -2,7 +2,7 @@
   plugins = {
     lsp = {
       enable = true;
-      capabilities = "offsetEncoding =  'utf-16'";
+      capabilities = "offsetEncoding = { 'utf-8', 'utf-16'}";
       servers = {};
     };
   };

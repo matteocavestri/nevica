@@ -8,12 +8,14 @@
       separator = ""; # ➜
     };
     registrations = {
-      #   "<leader>t" = " Terminal";
       "<leader>d" = "󰃤 Debugger";
-      "<leader>f" = " Find";
+      "<leader>f" = " Find";
       "<leader>g" = "󰊢 Git";
-      "<leader>s" = " Whichkey";
-      "<leader>u" = "󰔚 Miscellaneous";
+      "<leader>s" = " Search";
+      "<leader>w" = "󰔚 Miscellaneous";
+      "<leader>l" = " LSP";
+      "<leader>c" = " Code";
+      "<leader>t" = " Trouble";
     };
     window = {
       border = "none";
