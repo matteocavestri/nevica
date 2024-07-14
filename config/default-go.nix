@@ -8,7 +8,7 @@
     # ----- Formatters & Linters ----------
     ./none-ls/default.nix
     # ----- Languages configurations ------
-    ./languages/default.nix
+    ./languages/golang.nix
     # ----- Debugger ----------------------
     ./dap/dap.nix
     # ----- Code completion ---------------

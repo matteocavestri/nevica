@@ -23,6 +23,7 @@
       perSystem = {
         pkgs,
         system,
+        self,
         ...
       }: let
         pkgs = import inputs.nixpkgs {
@@ -33,24 +34,55 @@
         };
         nixvimLib = nixvim.lib.${system};
         nixvim' = nixvim.legacyPackages.${system};
-        nixvimModule = {
+
+        nixvimModuleDefault = {
           inherit pkgs;
           module = import ./config; # import the module directly
-          # You can use `extraSpecialArgs` to pass additional arguments to your module files
-          extraSpecialArgs = {
-            # inherit (inputs) foo;
-          };
+          extraSpecialArgs = {};
         };
-        nvim = nixvim'.makeNixvimWithModule nixvimModule;
+        nixvimModuleGo = {
+          inherit pkgs;
+          module = import ./config/default-go.nix; # import the Go module
+          extraSpecialArgs = {};
+        };
+        nixvimModuleRust = {
+          inherit pkgs;
+          module = import ./config/default-rust.nix; # import the Rust module
+          extraSpecialArgs = {};
+        };
+        nixvimModuleJava = {
+          inherit pkgs;
+          module = import ./config/default-java.nix; # import the Java module
+          extraSpecialArgs = {};
+        };
+        nixvimModuleCC = {
+          inherit pkgs;
+          module = import ./config/default-cc.nix; # import the C/C++ module
+          extraSpecialArgs = {};
+        };
+        nixvimModulePython = {
+          inherit pkgs;
+          module = import ./config/default-python.nix; # import the Python module
+          extraSpecialArgs = {};
+        };
+        nvim = nixvim'.makeNixvimWithModule nixvimModuleDefault;
+        nvimGo = nixvim'.makeNixvimWithModule nixvimModuleGo;
+        nvimRust = nixvim'.makeNixvimWithModule nixvimModuleRust;
+        nvimJava = nixvim'.makeNixvimWithModule nixvimModuleJava;
+        nvimCC = nixvim'.makeNixvimWithModule nixvimModuleCC;
+        nvimPython = nixvim'.makeNixvimWithModule nixvimModulePython;
       in {
         checks = {
-          # Run `nix flake check .` to verify that your config is not broken
-          default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModule;
+          default = nixvimLib.check.mkTestDerivationFromNixvimModule nixvimModuleDefault;
         };
 
         packages = {
-          # Lets you run `nix run .` to start nixvim
-          default = nvim;
+          nevica-full = nvim;
+          nevica-go = nvimGo;
+          nevica-rust = nvimRust;
+          nevica-java = nvimJava;
+          nevica-cc = nvimCC;
+          nevica-python = nvimPython;
         };
       };
     };
