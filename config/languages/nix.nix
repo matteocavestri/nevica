@@ -4,6 +4,7 @@
       nil-ls = {
         enable = true;
         filetypes = ["nix"];
+        settings.nix.flake.autoArchive = true;
       };
     };
     none-ls.sources = {

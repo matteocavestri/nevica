@@ -27,5 +27,6 @@
     ./plugins/default.nix
     # ----- Keymaps -----------------------
     ./keymaps.nix
+    ./options.nix
   ];
 }
