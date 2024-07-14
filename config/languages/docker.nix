@@ -2,9 +2,9 @@
   plugins = {
     lsp.servers = {
       docker-compose-language-service = {
-        enable = true; 
+        enable = true;
       };
-      dockerls = { 
+      dockerls = {
         enable = true;
       };
     };

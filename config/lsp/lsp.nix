@@ -3,7 +3,7 @@
     lsp = {
       enable = true;
       capabilities = "offsetEncoding =  'utf-16'";
-      servers = {  };
+      servers = {};
     };
   };
   extraConfigLua = ''

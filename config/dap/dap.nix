@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   plugins.dap = {
     enable = true;
     adapters = {
@@ -46,7 +44,7 @@
             function()
               return vim.fn.input("Path to executable: ", vim.fn.getcwd() .. "/", "file")
             end
-        '';
+          '';
         }
       ];
     };

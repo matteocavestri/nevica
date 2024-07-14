@@ -2,7 +2,7 @@
   plugins = {
     lsp.servers = {
       bashls = {
-        enable = true; 
+        enable = true;
       };
     };
     none-ls.sources = {

@@ -3,7 +3,7 @@
     lsp.servers = {
       nil-ls = {
         enable = true;
-        filetypes = [ "nix" ];
+        filetypes = ["nix"];
       };
     };
     none-ls.sources = {

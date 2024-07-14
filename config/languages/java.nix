@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   plugins = {
     nvim-jdtls = {
       enable = true;
@@ -35,7 +33,14 @@
     };
     none-ls.sources = {
       diagnostics = {
-        checkstyle.enable = true;
+        checkstyle = {
+          enable = true;
+          withArgs = ''
+            {
+              extra_args = { "-c", "/google_checks.xml" }, -- /sun_checks.xml /google_checks.xml
+            }
+          '';
+        };
       };
     };
   };

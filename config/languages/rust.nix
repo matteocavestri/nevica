@@ -1,6 +1,4 @@
-{ pkgs, ... }:
-
-{
+{pkgs, ...}: {
   plugins = {
     lsp.servers = {
       rust-analyzer = {
@@ -28,7 +26,7 @@
     #rustaceanvim = {
     #  enable = true;
     #  settings.server = {
-    #    auto_attach = true; 
+    #    auto_attach = true;
     #  };
     #};
   };
