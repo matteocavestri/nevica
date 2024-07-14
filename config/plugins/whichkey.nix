@@ -15,7 +15,6 @@
       "<leader>w" = "󰔚 Miscellaneous";
       "<leader>l" = " LSP";
       "<leader>c" = " Code";
-      "<leader>t" = " Trouble";
     };
     window = {
       border = "none";

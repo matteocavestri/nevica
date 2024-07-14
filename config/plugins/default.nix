@@ -4,5 +4,7 @@
     ./todo-comments.nix
     ./whichkey.nix
     ./telescope.nix
+    ./tmux-navigator.nix
+    ./codeium.nix
   ];
 }

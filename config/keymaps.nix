@@ -241,43 +241,16 @@
     # Trouble  TODO: Add keybinds to close trouble (q would be nice), rn I need to use :x to close it...
     {
       mode = "n";
-      key = "<leader>tq";
-      action = "+diagnostics/quickfix";
+      key = "<leader>lt";
+      action = "<cmd>Trouble diagnostics<cr>";
       options = {
         silent = true;
-        desc = "Trouble Quickfix";
+        desc = "Trouble";
       };
     }
     {
       mode = "n";
-      key = "<leader>td";
-      action = "<cmd>TroubleToggle<cr>";
-      options = {
-        silent = true;
-        desc = "Trouble Document Diagnostics";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>tw";
-      action = "<cmd>TroubleToggle workspace_diagnostics<cr>";
-      options = {
-        silent = true;
-        desc = "Trouble Workspace Diagnostics";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>tt";
-      action = "<cmd>TroubleToggle todo<cr>";
-      options = {
-        silent = true;
-        desc = "Trouble Todo";
-      };
-    }
-    {
-      mode = "n";
-      key = "<leader>tl";
+      key = "<leader>ll";
       action = "<cmd>TodoQuickFix<cr>";
       options = {
         silent = true;

@@ -9,14 +9,14 @@ Nixvim based text editor inspired by Neve.
   - `Go`
   - `Java`
   - `Python`
+  - `C`
+  - `Cpp`
 - ✅**Full Support Minor**
   - `Lua`
   - `Nix`
   - `Dockerfile`
   - `Bash/Zsh`
 - **WIP**
-  - `C`
-  - `Cpp`
   - `typescript`
   - `javascript`
   - `Docker compose`
@@ -25,8 +25,8 @@ Nixvim based text editor inspired by Neve.
 
 | Language       | LSP              | Formatter                   | Linter        | Debugger          |
 | -------------- | ---------------- | --------------------------- | ------------- | ----------------- |
-| C              | clangd           | clang_format                | cppcheck      | WIP               |
-| Cpp            | clangd           | clang_format                | cppcheck      | WIP               |
+| C              | clangd           | clang_format                | cppcheck      | gdb               |
+| Cpp            | clangd           | clang_format                | cppcheck      | gdb               |
 | Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              |
 | Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             |
 | Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug |

@@ -44,6 +44,7 @@
               {name = 'path'},
               {name = 'luasnip'},
               {name = 'cmdline'},
+              {name = 'codeium'},
               }, {
             {name = 'buffer'},
             })
