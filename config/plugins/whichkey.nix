@@ -16,6 +16,7 @@
       "<leader>l" = " LSP";
       "<leader>c" = " Code";
       "<leader>t" = "󰙨Test";
+      "<leader>b" = "󰝜 Buffers";
     };
     window = {
       border = "none";

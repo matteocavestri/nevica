@@ -14,29 +14,41 @@
   extraConfigLua = ''
       require("staline").setup({
       sections = {
-        left = { "-mode", " ", "branch" },
+        left = { "-mode", "cool_symbol", "branch" },
         mid = { "lsp_name" },
-        right = { "file_name", "line_column" },
+        right = { "lsp", "file_name", "line_column" },
       },
       inactive_sections = {
-        left = { "-mode", " ", "branch" },
+        left = { "-mode", "cool_symbol", "branch" },
         mid = { "lsp_name" },
-        right = { "file_name", "line_column" },
+        right = { "lsp", "file_name", "line_column" },
       },
       defaults = {
         left_separator = " ",
         right_separator = "  ",
         branch_symbol = " ",
+        lsp_client_symbol = " ",
+        null_ls_symbol = "",
         mod_symbol = "",
-        line_column = "[%l/%L]",
-        inactive_color = "#80a6f2", --#303030 is the default
+        cool_symbol = " ",
+        line_column = "[%l/%L]" ,
+        inactive_color = "#80a6f2",
         inactive_bgcolor = "none",
+        expand_null_ls = false,
+        lsp_client_character_length = 35,
       },
       special_table = {
         lazy = { "Plugins", "💤 " },
         TelescopePrompt = { "Telescope", "  " },
         oil = { "Oil", "󰏇 " },
         lazygit = { "LazyGit", " " },
+        ["neo-tree"] = {"NeoTree", "  "},
+      },
+      lsp_symbols = {
+        Error=" ",
+        Info=" ",
+        Warn=" ",
+        Hint=" ",
       },
       mode_icons = {
         ["n"] = "NORMAL",
