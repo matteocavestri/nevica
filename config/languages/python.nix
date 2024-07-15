@@ -29,4 +29,19 @@
       };
     };
   };
+  extraConfigLua = ''
+    require("neotest").setup({
+      adapters = {
+        require("neotest-python")({
+        dap = { justMyCode = false },
+        args = {"--log-level", "DEBUG"},
+        runner = "pytest",
+        python = "python",
+        is_test_file = function(file_path)
+            return vim.fn.fnamemodify(file_path, ':t'):match("^test_.*%.py$") ~= nil
+        end,
+        }),
+      },
+    })
+  '';
 }
