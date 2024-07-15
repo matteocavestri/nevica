@@ -83,7 +83,7 @@ nix run github:matteocavestri/nevica#nevica-python
 ## Todo
 
 - more testing and fixing on gdb (cpp)
-- neotest integration for cpp, rust, golang, python
+- neotest integration for cpp, rust, golang, python --> OK
 - write documentation
 - make devShells
 - integrate executables (e.g. lldb)
