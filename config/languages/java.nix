@@ -44,4 +44,18 @@
       };
     };
   };
+  extraConfigLua = ''
+    require("neotest").setup({
+     adapters = {
+       require("neotest-java")({
+         ignore_wrapper = false,
+         determine_runner = function(project_root_path)
+           return "maven"
+         end,
+         force_runner = nil,
+         fallback_runner = "gradle"
+       }),
+     },
+    })
+  '';
 }

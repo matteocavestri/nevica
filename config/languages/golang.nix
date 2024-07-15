@@ -22,4 +22,11 @@
       };
     };
   };
+  extraConfigLua = ''
+    require("neotest").setup({
+      adapters = {
+
+      },
+    })
+  '';
 }
