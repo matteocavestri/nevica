@@ -46,6 +46,4 @@
       summary = { enabled = true, },
     })
   '';
-  keymaps = [
-  ];
 }

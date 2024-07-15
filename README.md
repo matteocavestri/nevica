@@ -64,18 +64,28 @@ nix run github:matteocavestri/nevica#nevica-python
 
 ## Support Status
 
-| Language       | LSP              | Formatter                   | Linter        | Debugger          |
-| -------------- | ---------------- | --------------------------- | ------------- | ----------------- |
-| C              | clangd           | clang_format                | cppcheck      | gdb               |
-| Cpp            | clangd           | clang_format                | cppcheck      | gdb               |
-| Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              |
-| Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             |
-| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug |
-| python         | pyright, ruff    | black                       | pylint        | debugpy           |
-| typescript     | typescript-tools | prettier                    | eslint        | /                 |
-| javascript     | typescript-tools | prettier                    | eslint        | /                 |
-| lua            | lua-ls           | stylelua                    | selene        | /                 |
-| Nix            | nil-ls           | alejandra                   | statix        | /                 |
-| Docker         | dockerls         | dockerls                    | hadolint      | /                 |
-| Docker Compose | WIP              | WIP                         | WIP           | /                 |
-| Bash           | bashls           | shfmt                       | zsh           | /                 |
+| Language       | LSP              | Formatter                   | Linter        | Debugger          | Test    |
+| -------------- | ---------------- | --------------------------- | ------------- | ----------------- | ------- |
+| C              | clangd           | clang_format                | cppcheck      | gdb               | /       |
+| Cpp            | clangd           | clang_format                | cppcheck      | gdb ?             | **WIP** |
+| Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              | **WIP** |
+| Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             | go      |
+| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | maven   |
+| python         | pyright, ruff    | black                       | pylint        | debugpy           | **WIP** |
+| typescript     | typescript-tools | prettier                    | eslint        | /                 | /       |
+| javascript     | typescript-tools | prettier                    | eslint        | /                 | /       |
+| lua            | lua-ls           | stylelua                    | selene        | /                 | /       |
+| Nix            | nil-ls           | alejandra                   | statix        | /                 | /       |
+| Docker         | dockerls         | dockerls                    | hadolint      | /                 | /       |
+| Bash           | bashls           | shfmt                       | zsh           | /                 | /       |
+| Docker Compose | **WIP**          | **WIP**                     | **WIP**       | /                 | /       |
+
+## Todo
+
+- more testing and fixing on gdb (cpp)
+- neotest integration for cpp, rust, golang, python
+- write documentation
+- make devShells
+- integrate executables (e.g. lldb)
+- Move Test config under languages
+- Add neorg / neovim org mode
