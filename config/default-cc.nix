@@ -12,7 +12,7 @@
     # ----- Debugger ----------------------
     ./dap/dap.nix
     # ----- Code completion ---------------
-    ./completion/cmp.nix
+    ./completion/default.nix
     # ----- Snippets ----------------------
     ./snippets/luasnip.nix
 

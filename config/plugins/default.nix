@@ -9,5 +9,6 @@
     ./neotest.nix
     ./neodev.nix
     ./nvim-autopairs.nix
+    ./git.nix
   ];
 }
