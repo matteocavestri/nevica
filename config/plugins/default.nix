@@ -14,5 +14,6 @@
     ./tagbar.nix
     ./surround.nix
     ./commentary.nix
+    ./neorg.nix
   ];
 }

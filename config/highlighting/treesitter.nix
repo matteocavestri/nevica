@@ -3,6 +3,7 @@
     enable = true;
     settings = {
       indent.enable = true;
+      ensure_installed = "all";
     };
     folding = true;
     nixvimInjections = true;
