@@ -10,5 +10,9 @@
     ./neodev.nix
     ./nvim-autopairs.nix
     ./git.nix
+    ./persistence.nix
+    ./tagbar.nix
+    ./surround.nix
+    ./commentary.nix
   ];
 }

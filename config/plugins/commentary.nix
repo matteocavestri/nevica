@@ -1,0 +1,5 @@
+{
+  plugins.commentary = {
+    enable = true;
+  };
+}

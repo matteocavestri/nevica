@@ -38,7 +38,7 @@
         action = "find_files";
         options.desc = "Find Files";
       };
-      "<leader>fa" = {
+      "<leader>fg" = {
         action = "live_grep";
         options.desc = "Live Grep";
       };
