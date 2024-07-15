@@ -70,7 +70,7 @@ nix run github:matteocavestri/nevica#nevica-python
 | Cpp            | clangd           | clang_format                | cppcheck      | gdb ?             | **WIP** |
 | Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              | **WIP** |
 | Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             | go      |
-| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | maven   |
+| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | **WIP** |
 | python         | pyright, ruff    | black                       | pylint        | debugpy           | **WIP** |
 | typescript     | typescript-tools | prettier                    | eslint        | /                 | /       |
 | javascript     | typescript-tools | prettier                    | eslint        | /                 | /       |
