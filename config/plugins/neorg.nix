@@ -10,12 +10,17 @@
       "core.completion".config.engine = "nvim-cmp";
       "core.qol.toc".config.close_after_use = true;
       "core.summary".__empty = null;
+      "core.keybinds".config = {
+        default_keybinds = true;
+        preset = "neorg";
+      };
       "core.dirman" = {
         config = {
           workspaces = {
             home = "~/notes/home";
             work = "~/notes/work";
           };
+          default_workspace = "home";
         };
       };
     };

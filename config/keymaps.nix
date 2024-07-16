@@ -600,5 +600,15 @@
         desc = "Code Tagbar";
       };
     }
+
+    # NEORG
+    # {
+    #   mode = "n";
+    #   key = "<leader>nn";
+    #   action = "<Plug>(neorg.dirman.new-note)";
+    #   options = {
+    #     desc = "New Note";
+    #   };
+    # }
   ];
 }

@@ -84,6 +84,140 @@
           nevica-cc = nvimCC;
           nevica-python = nvimPython;
         };
+
+        devShells = {
+          nevica-full = pkgs.mkShell {
+            buildInputs = [
+              # General
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              # Rust
+              pkgs.clippy
+              pkgs.rustfmt
+              pkgs.lldb_18
+              pkgs.cargo
+              pkgs.rustc
+              # C/C++
+              pkgs.gdb
+              pkgs.gcc
+              pkgs.cmake
+              pkgs.gnumake
+              # Go
+              pkgs.go
+              # Java
+              pkgs.jdk
+              pkgs.maven
+              # Javascript/Typescript
+              pkgs.nodejs
+              pkgs.typescript
+              pkgs.nodePackages.npm
+              # Lua
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+              # Python
+              pkgs.python3
+              pkgs.python3Packages.pip
+              pkgs.python3Packages.pytest
+              pkgs.pipx
+            ];
+            shellHook = ''
+              echo "Welcome to the Nevica Full devShell"
+            '';
+          };
+
+          go = pkgs.mkShell {
+            buildInputs = [
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              pkgs.go
+              # Deps
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+            ];
+            shellHook = ''
+              echo "Welcome to the Go development shell"
+            '';
+          };
+
+          rust = pkgs.mkShell {
+            buildInputs = [
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              pkgs.clippy
+              pkgs.rustfmt
+              pkgs.lldb_18
+              pkgs.cargo
+              pkgs.rustc
+              # Deps
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+            ];
+            shellHook = ''
+              echo "Welcome to the Rust development shell"
+            '';
+          };
+
+          java = pkgs.mkShell {
+            buildInputs = [
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              pkgs.jdk
+              pkgs.maven
+              # Deps
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+            ];
+            shellHook = ''
+              echo "Welcome to the Java development shell"
+            '';
+          };
+
+          cc = pkgs.mkShell {
+            buildInputs = [
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              pkgs.gdb
+              pkgs.gcc
+              pkgs.cmake
+              pkgs.gnumake
+              # Deps
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+            ];
+            shellHook = ''
+              echo "Welcome to the C/C++ development shell"
+            '';
+          };
+
+          python = pkgs.mkShell {
+            buildInputs = [
+              pkgs.git
+              pkgs.curl
+              pkgs.wget
+              pkgs.zsh
+              pkgs.python3
+              pkgs.python3Packages.pip
+              pkgs.python3Packages.pytest
+              pkgs.pipx
+              # Deps
+              pkgs.lua
+              pkgs.luajitPackages.luarocks-nix
+            ];
+            shellHook = ''
+              echo "Welcome to the Python development shell"
+            '';
+          };
+        };
       };
     };
 }
