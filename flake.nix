@@ -88,6 +88,7 @@
         devShells = {
           nevica-full = pkgs.mkShell {
             buildInputs = [
+              nvim
               # General
               pkgs.git
               pkgs.curl
@@ -129,6 +130,7 @@
 
           go = pkgs.mkShell {
             buildInputs = [
+              nvimGo
               pkgs.git
               pkgs.curl
               pkgs.wget
@@ -145,6 +147,7 @@
 
           rust = pkgs.mkShell {
             buildInputs = [
+              nvimRust
               pkgs.git
               pkgs.curl
               pkgs.wget
@@ -165,6 +168,7 @@
 
           java = pkgs.mkShell {
             buildInputs = [
+              nvimJava
               pkgs.git
               pkgs.curl
               pkgs.wget
@@ -182,6 +186,7 @@
 
           cc = pkgs.mkShell {
             buildInputs = [
+              nvimCC
               pkgs.git
               pkgs.curl
               pkgs.wget
@@ -201,6 +206,7 @@
 
           python = pkgs.mkShell {
             buildInputs = [
+              nvimPython
               pkgs.git
               pkgs.curl
               pkgs.wget
