@@ -13,6 +13,7 @@
       "core.itero".__empty = null;
       "core.ui.calendar".__empty = null;
       "core.promo".__empty = null;
+      "core.pivot".__empty = null;
       "core.keybinds".config = {
         default_keybinds = true;
         preset = "neorg";
@@ -28,6 +29,14 @@
       };
     };
   };
+  extraConfigLua = ''
+    vim.api.nvim_create_autocmd("FileType", {
+      pattern = "norg",
+      callback = function()
+        vim.b.maplocalleader = ","
+      end,
+    })
+  '';
   extraPlugins = with pkgs.vimPlugins; [
     neorg-telescope
     (pkgs.vimUtils.buildVimPlugin {
