@@ -10,6 +10,9 @@
       "core.completion".config.engine = "nvim-cmp";
       "core.qol.toc".config.close_after_use = true;
       "core.summary".__empty = null;
+      "core.itero".__empty = null;
+      "core.ui.calendar".__empty = null;
+      "core.promo".__empty = null;
       "core.keybinds".config = {
         default_keybinds = true;
         preset = "neorg";
