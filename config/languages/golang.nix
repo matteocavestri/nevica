@@ -21,9 +21,9 @@
         golangci_lint.enable = true;
       };
     };
-    # neotest.adapters.go = {
-    #   enable = true;
-    # };
+    neotest.adapters.go = {
+      enable = true;
+    };
   };
   extraConfigLua = ''
     require("neotest").setup({
