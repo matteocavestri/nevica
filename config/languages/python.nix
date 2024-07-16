@@ -35,6 +35,7 @@
         args = ["--log-level" "DEBUG"];
         runner = "pytest";
         python = "python";
+        pytest_discover_instances = true;
       };
     };
   };
