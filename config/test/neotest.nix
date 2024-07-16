@@ -50,10 +50,19 @@
         signs = true;
         virtual_text = true;
       };
+      watch = {
+        enable = true;
+        symbol_queries = {
+          python = ''
+            (import_from_statement (_ (identifier) @symbol))
+            (import_statement (_ (identifier) @symbol))
+          '';
+        };
+      };
     };
   };
   extraPlugins = with pkgs.vimPlugins; [
-    neotest-python
+    # neotest-python
     neotest-java
     neotest-go
     neotest-rust

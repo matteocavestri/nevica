@@ -28,20 +28,26 @@
         pylint.enable = true;
       };
     };
+    neotest.adapters.python = {
+      enable = true;
+      settings = {
+        dap = {justMyCode = false;};
+        args = ["--log-level" "DEBUG"];
+        runner = "pytest";
+        python = "python";
+      };
+    };
   };
-  extraConfigLua = ''
-    require("neotest").setup({
-      adapters = {
-        require("neotest-python")({
-        dap = { justMyCode = false },
-        args = {"--log-level", "DEBUG"},
-        runner = "pytest",
-        python = "python",
-        is_test_file = function(file_path)
-            return vim.fn.fnamemodify(file_path, ':t'):match("^test_.*%.py$") ~= nil
-        end,
-        }),
-      },
-    })
-  '';
+  # extraConfigLua = ''
+  #   require("neotest").setup({
+  #     adapters = {
+  #       require("neotest-python")({
+  #       dap = { justMyCode = false },
+  #       args = {"--log-level", "DEBUG"},
+  #       runner = "pytest",
+  #       python = "python",
+  #       }),
+  #     },
+  #   })
+  # '';
 }
