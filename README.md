@@ -1,88 +1,60 @@
 # Nevica
 
-Nixvim based text editor inspired by Neve.
+Nevica is a text editor based on [Nixvim](https://github.com/nix-community/nixvim) and inspired by [Neve](https://github.com/redyf/Neve) . The project's goal is to have a complete core for `highlighting`, `LSPs`, `debuggers`, `formatters`, `diagnostics`, and `tests`. The support for any programming language can be added simply with a file (languages.nix).
+
+The different flavours of nevica are:
+
+- `nevica-full` --> IDE with support for all languages
+- `nevica-cc` --> IDE for C/C++
+- `nevica-go` --> IDE for Go
+- `nevica-rust` --> IDE for Rust
+- `nevica-java` --> IDE for Java
+- `nevica-python` --> IDE for Python
 
 ## How to Use
 
-You can try Nevica using nix.
-There are different versions of Nevica:
-
-**Nevica Full**
+You can run the packages with the command
 
 ```bash
-nix run github:matteocavestri/nevica#nevica-full
+nix run github:matteocavestri/nevica#flavour-name
+# e.g. nix run github:matteocavestri/nevica#nevica-go
 ```
 
-**Nevica Go**
+You can run a devShell with experimental flake support
 
 ```bash
-nix run github:matteocavestri/nevica#nevica-go
+nix develop --extra-experimental-features 'nix-command flakes' github:matteocavestri/nevica#flavour-name
+# e.g. nix develop --extra-experimental-features 'nix-command flakes' github:matteocavestri/nevica#nevica-go
 ```
 
-**Nevica Rust**
+You can update your installation with
 
 ```bash
-nix run github:matteocavestri/nevica#nevica-rust
-```
-
-**Nevica Java**
-
-```bash
-nix run github:matteocavestri/nevica#nevica-java
-```
-
-**Nevica C/C++**
-
-```bash
-nix run github:matteocavestri/nevica#nevica-cc
-```
-
-**Nevica Python**
-
-```bash
-nix run github:matteocavestri/nevica#nevica-python
+nix flake update --extra-experimental-features 'nix-command flakes' --flake github:matteocavestri/nevica
 ```
 
 ## Support
 
-- ✅**Full Support** (aka. LSP, Formatter, Linter, Debugger)
-  - `Rust`
-  - `Go`
-  - `Java`
-  - `Python`
-  - `C`
-  - `Cpp`
-- ✅**Full Support Minor**
-  - `Lua`
-  - `Nix`
-  - `Dockerfile`
-  - `Bash/Zsh`
-  - `Typescript`
-  - `Javascript`
-- **WIP**
-  - `Docker compose`
+| Language         | LSP  | Formatter | Diagnostic | Debugger | Test |
+| ---------------- | ---- | --------- | ---------- | -------- | ---- |
+| C               |     |          |           |         |     |
+| Cpp             |     |          |           |  ?      |     |
+| Rust            |     |          |           |         |     |
+| Golang          |     |  x3      |           |         |     |
+| Java            |     |          |           |         |     |
+| python          |  x2 |          |           |         |     |
+| typescript 󰛦     |     |          |           |         |     |
+| javascript 󰌞     |     |          |           |         |     |
+| lua             |     |          |           |         |     |
+| Nix 󱄅            |     |          |           |         |     |
+| Docker          |     |          |           |         |     |
+| Bash            |     |          |           |         |     |
+| Docker Compose  |     |          |           |         |     |
 
-## Support Status
+Legende:
 
-| Language       | LSP              | Formatter                   | Linter        | Debugger          | Test    |
-| -------------- | ---------------- | --------------------------- | ------------- | ----------------- | ------- |
-| C              | clangd           | clang_format                | cppcheck      | gdb               | /       |
-| Cpp            | clangd           | clang_format                | cppcheck      | gdb ?             | cargo   |
-| Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              | **WIP** |
-| Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             | go      |
-| Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | **WIP** |
-| python         | pyright, ruff    | black                       | pylint        | debugpy           | **WIP** |
-| typescript     | typescript-tools | prettier                    | eslint        | /                 | /       |
-| javascript     | typescript-tools | prettier                    | eslint        | /                 | /       |
-| lua            | lua-ls           | stylelua                    | selene        | /                 | /       |
-| Nix            | nil-ls           | alejandra                   | statix        | /                 | /       |
-| Docker         | dockerls         | dockerls                    | hadolint      | /                 | /       |
-| Bash           | bashls           | shfmt                       | zsh           | /                 | /       |
-| Docker Compose | **WIP**          | **WIP**                     | **WIP**       | /                 | /       |
+-  --> Full support
+-  --> Not implemented / not needed
+-  --> Work in progress
 
-## Todo
-
-- more testing and fixing gdb (cpp)
-- neotest integration for cpp, rust, golang, python
-- write documentation
-- Move Test config under languages --> WIP
+If you want to see the details about LSP, debugger, etc., go to [Support Table](https://github.com/matteocavestri/nevica/blob/main/docs/support-table.md)
