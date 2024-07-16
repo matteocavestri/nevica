@@ -17,6 +17,7 @@
       "<leader>c" = "  Code";
       "<leader>t" = "󰙨 Test";
       "<leader>b" = "󰝜  Buffers";
+      "<leader>n" = "󰎚  Neorg";
     };
     window = {
       border = "none";

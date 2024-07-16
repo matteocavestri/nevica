@@ -602,13 +602,61 @@
     }
 
     # NEORG
-    # {
-    #   mode = "n";
-    #   key = "<leader>nn";
-    #   action = "<Plug>(neorg.dirman.new-note)";
-    #   options = {
-    #     desc = "New Note";
-    #   };
-    # }
+    {
+      mode = "n";
+      key = "<leader>nw";
+      action = ":Neorg workspace<CR>";
+      options = {
+        desc = "Default workspace";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ni";
+      action = ":Neorg index<CR>";
+      options = {
+        desc = "Neorg index";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>nj";
+      action = ":Neorg journal today<CR>";
+      options = {
+        desc = "Today's journal";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>nm";
+      action = ":Neorg inject-metadata<CR>";
+      options = {
+        desc = "Inject metadata";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>nt";
+      action = ":Neorg toc<CR>";
+      options = {
+        desc = "Table of Content";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>nu";
+      action = ":Neorg update-metadata<CR>";
+      options = {
+        desc = "Update metadata";
+      };
+    }
+    {
+      mode = "n";
+      key = "<leader>ns";
+      action = ":Neorg generate-workspace-summary<CR>";
+      options = {
+        desc = "Generate workspace summary";
+      };
+    }
   ];
 }
