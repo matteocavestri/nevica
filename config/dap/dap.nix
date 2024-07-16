@@ -2,6 +2,7 @@
   plugins.dap = {
     enable = true;
     adapters = {};
+    configurations = {};
     signs = {
       dapBreakpoint = {
         text = "●";
@@ -27,6 +28,5 @@
         enable = true;
       };
     };
-    configurations = {};
   };
 }

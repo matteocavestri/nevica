@@ -67,7 +67,7 @@ nix run github:matteocavestri/nevica#nevica-python
 | Language       | LSP              | Formatter                   | Linter        | Debugger          | Test    |
 | -------------- | ---------------- | --------------------------- | ------------- | ----------------- | ------- |
 | C              | clangd           | clang_format                | cppcheck      | gdb               | /       |
-| Cpp            | clangd           | clang_format                | cppcheck      | gdb ?             | **WIP** |
+| Cpp            | clangd           | clang_format                | cppcheck      | gdb ?             | cargo   |
 | Rust           | rust-analyzer    | rust-analyzer               | rust-analyzer | lldb              | **WIP** |
 | Golang         | gopls            | gofumpt, goimports, golines | golangci_lint | delve             | go      |
 | Java           | jdtls            | jdtls                       | checkstyle    | vscode-java-debug | **WIP** |

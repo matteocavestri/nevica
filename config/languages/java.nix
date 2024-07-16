@@ -43,6 +43,9 @@
         };
       };
     };
+    neotest.adapters.java = {
+      enable = true;
+    };
   };
   extraConfigLua = ''
     require("neotest").setup({

@@ -15,8 +15,7 @@
   extraConfigLua = ''
     require("neotest").setup({
       adapters = {
-        require("neotest-rust") {
-          args = { "--no-capture" },
+        require('rustaceanvim.neotest') {
         },
       },
     })

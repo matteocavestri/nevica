@@ -55,8 +55,4 @@
       };
     };
   };
-  extraPlugins = with pkgs.vimPlugins; [
-    neotest-java
-    neotest-rust
-  ];
 }
