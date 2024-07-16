@@ -3,7 +3,9 @@
     enable = true;
     settings = {
       indent.enable = true;
+      highlight.enable = true;
       ensure_installed = "all";
+      additional_vim_regex_highlighting = false;
     };
     folding = true;
     nixvimInjections = true;

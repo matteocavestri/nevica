@@ -11,6 +11,8 @@
     ./languages/java.nix
     # ----- Debugger ----------------------
     ./dap/dap.nix
+    # ----- Tests -------------------------
+    ./test/default.nix
     # ----- Code completion ---------------
     ./completion/default.nix
     # ----- Snippets ----------------------

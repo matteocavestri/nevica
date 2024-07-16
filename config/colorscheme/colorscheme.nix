@@ -12,9 +12,9 @@
           dark = "mocha";
         };
         flavour = "mocha"; # "latte", "mocha", "frappe", "macchiato" or raw lua code
-        disable_bold = false;
-        disable_italic = false;
-        disable_underline = false;
+        no_bold = false;
+        no_italic = false;
+        no_underline = false;
         transparent_background = true;
         term_colors = true;
         integrations = {
@@ -45,6 +45,15 @@
               warnings = ["underline"];
             };
           };
+        };
+        styles = {
+          booleans = [
+            "bold"
+            "italic"
+          ];
+          conditionals = [
+            "bold"
+          ];
         };
       };
     };

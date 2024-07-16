@@ -45,6 +45,7 @@
               {name = 'luasnip'},
               {name = 'cmdline'},
               {name = 'codeium'},
+              {name = 'neorg'},
               }, {
             {name = 'buffer'},
             })

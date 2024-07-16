@@ -1,10 +1,15 @@
 {pkgs, ...}: {
+  files."after/ftplugin/norg.lua" = {
+    localOpts.conceallevel = 2;
+  };
   plugins.neorg = {
     enable = true;
     modules = {
-      "core.defaults" = {
-        __empty = null;
-      };
+      "core.defaults".__empty = null;
+      "core.concealer".__empty = null;
+      "core.completion".config.engine = "nvim-cmp";
+      "core.qol.toc".config.close_after_use = true;
+      "core.summary".__empty = null;
       "core.dirman" = {
         config = {
           workspaces = {
@@ -42,6 +47,15 @@
         repo = "plenary.nvim";
         rev = "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683";
         sha256 = "0n2p8krzwiw682f0yb6n8faamffpp336rjy50pbqf3jmc6czd5z4";
+      };
+    })
+    (pkgs.vimUtils.buildVimPlugin {
+      name = "nvim-nio";
+      src = pkgs.fetchFromGitHub {
+        owner = "nvim-neotest";
+        repo = "nvim-nio";
+        rev = "a428f309119086dc78dd4b19306d2d67be884eee";
+        sha256 = "0n40q6znpy1xzywd1hwyivx7y1n0i0fcp3m7jp0vgipm6qssda4b";
       };
     })
   ];

@@ -83,9 +83,8 @@ nix run github:matteocavestri/nevica#nevica-python
 ## Todo
 
 - more testing and fixing on gdb (cpp)
-- neotest integration for cpp, rust, golang, python --> OK
+- neotest integration for cpp, rust, golang, python
 - write documentation
 - make devShells
 - integrate executables (e.g. lldb)
-- Move Test config under languages
-- Add neorg / neovim org mode
+- Move Test config under languages --> WIP
