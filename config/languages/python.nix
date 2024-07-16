@@ -28,6 +28,7 @@
         pylint.enable = true;
       };
     };
+    # FIX: Neotest doesn't work with python
     neotest.adapters.python = {
       enable = true;
       settings = {

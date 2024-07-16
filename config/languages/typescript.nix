@@ -37,6 +37,7 @@
       eslint.enable = true;
       tsserver.enable = false;
     };
+    # TODO: Edit to use none-ls
     lint.lintersByFt = {
       javascript = ["eslint_d"];
       javascriptreact = ["eslint_d"];
@@ -44,6 +45,7 @@
       typescriptreact = ["eslint_d"];
     };
   };
+  # FIX: Debug doesn't work for javascript/typescript
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
       name = "vim-dap-vscode-js";

@@ -43,6 +43,7 @@
         };
       };
     };
+    # FIX: Neotest doesn't work with java
     neotest.adapters.java = {
       enable = true;
     };

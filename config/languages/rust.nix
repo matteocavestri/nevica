@@ -12,6 +12,7 @@
       };
     };
   };
+  # FIX: Neotest does not work on rust
   extraConfigLua = ''
     require("neotest").setup({
       adapters = {

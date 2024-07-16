@@ -15,7 +15,7 @@
       };
       settings = {
         mapping = {
-          # TODO: Move mappings
+          # NOTE: cmp mappings
           __raw = ''
             cmp.mapping.preset.insert({
             ['<C-j>'] = cmp.mapping.select_next_item(),

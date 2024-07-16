@@ -11,6 +11,7 @@
           end
         end
       '';
+      # NOTE: toggleterm mappings
       open_mapping = "[[<A-i>]]";
       hide_numbers = true;
       shade_terminals = true;

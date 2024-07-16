@@ -38,7 +38,7 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Language         | LSP  | Formatter | Diagnostic | Debugger | Test |
 | ---------------- | ---- | --------- | ---------- | -------- | ---- |
 | C               |     |          |           |         |     |
-| Cpp             |     |          |           |  ?      |     |
+| Cpp             |     |          |           |         |     |
 | Rust            |     |          |           |         |     |
 | Golang          |     |  x3      |           |         |     |
 | Java            |     |          |           |         |     |
