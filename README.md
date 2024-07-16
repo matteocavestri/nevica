@@ -49,7 +49,7 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Nix 󱄅            |     |          |           |         |     |
 | Docker          |     |          |           |         |     |
 | Bash            |     |          |           |         |     |
-| Docker Compose  |     |          |           |         |     |
+| Docker Compose  |     |          |           |         |     |
 
 Legende:
 
