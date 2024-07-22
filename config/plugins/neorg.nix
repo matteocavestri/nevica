@@ -29,7 +29,6 @@
       };
     };
   };
-  # FIX: LocalLeader only show on index.norg
   extraConfigLua = ''
     vim.api.nvim_create_autocmd("FileType", {
       pattern = "norg",
