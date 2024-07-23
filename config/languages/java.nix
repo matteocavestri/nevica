@@ -35,7 +35,7 @@
       diagnostics = {
         checkstyle = {
           enable = true;
-          withArgs = ''
+          settings = ''
             {
               extra_args = { "-c", "/google_checks.xml" }, -- /sun_checks.xml /google_checks.xml
             }

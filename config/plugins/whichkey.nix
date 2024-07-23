@@ -8,16 +8,16 @@
       separator = ""; # ➜
     };
     registrations = {
-      "<leader>d" = "󰃤  Debugger";
-      "<leader>f" = "  Find";
-      "<leader>g" = "󰊢  Git";
-      "<leader>s" = "  Search";
-      "<leader>w" = "󰔚  Miscellaneous";
-      "<leader>l" = "  LSP";
-      "<leader>c" = "  Code";
-      "<leader>t" = "󰙨 Test";
-      "<leader>b" = "󰝜  Buffers";
-      "<leader>n" = "󰎚  Neorg";
+      "<leader>d" = "Debugger";
+      "<leader>f" = "Find";
+      "<leader>g" = "Git";
+      "<leader>s" = "Search";
+      "<leader>w" = "Miscellaneous";
+      "<leader>l" = "Lsp";
+      "<leader>c" = "Code";
+      "<leader>t" = "Test";
+      "<leader>b" = "Buffers";
+      "<leader>n" = "Neorg";
     };
     window = {
       border = "none";

@@ -18,7 +18,7 @@
         prettier = {
           enable = true;
           disableTsServerFormatter = true;
-          withArgs = ''
+          settings = ''
             {
               extra_args = { "--no-semi", "--single-quote" },
             }

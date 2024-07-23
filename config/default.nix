@@ -31,5 +31,7 @@
     ./keymaps.nix
     # ----- Options -----------------------
     ./options.nix
+    # ----- Neorg -------------------------
+    ./plugins/neorg.nix
   ];
 }

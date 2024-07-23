@@ -66,3 +66,9 @@ Legend:
 - ⏰ --> Work in progress
 
 If you want to see the details about LSP, debugger, etc., go to [Support Table](https://github.com/matteocavestri/nevica/blob/main/docs/support-table.md)
+
+## Known Issues
+
+- Which-key gives warning, styling is wrong.
+  - Solution: wait [this issue](https://github.com/nix-community/nixvim/issues/1901) to close
+- Sometimes codeium tries to autocomplete on save and it gives an error
