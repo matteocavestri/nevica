@@ -35,26 +35,26 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 
 ## Support
 
-| Language         | LSP  | Formatter | Diagnostic | Debugger | Test |
-| ---------------- | ---- | --------- | ---------- | -------- | ---- |
-| C               |     |          |           |         |     |
-| Cpp             |     |          |           |         |     |
-| Rust            |     |          |           |         |     |
-| Golang          |     |  x3      |           |         |     |
-| Java            |     |          |           |         |     |
-| python          |  x2 |          |           |         |     |
-| typescript 󰛦     |     |          |           |         |     |
-| javascript 󰌞     |     |          |           |         |     |
-| lua             |     |          |           |         |     |
-| Nix 󱄅            |     |          |           |         |     |
-| Docker          |     |          |           |         |     |
-| Bash            |     |          |           |         |     |
-| Docker Compose  |     |          |           |         |     |
+| Language       | LSP   | Formatter | Diagnostic | Debugger | Test |
+| -------------- | ----- | --------- | ---------- | -------- | ---- |
+| C              | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Cpp            | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Golang         | ✅    | ✅ x3     | ✅         | ✅       | ✅   |
+| Java           | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
+| Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Javascript     | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Lua            | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Nix            | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Docker         | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Bash           | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Docker Compose | ✅    | ✅        | ✅         | ❌       | ❌   |
 
-Legende:
+Legend:
 
--  --> Full support
--  --> Not implemented / not needed
--  --> Work in progress
+- ✅ --> Full support
+- ❌ --> Not implemented / not needed
+- ⏰ --> Work in progress
 
 If you want to see the details about LSP, debugger, etc., go to [Support Table](https://github.com/matteocavestri/nevica/blob/main/docs/support-table.md)
