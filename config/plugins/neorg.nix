@@ -13,8 +13,8 @@
       "core.itero".__empty = null;
       "core.ui.calendar".__empty = null;
       "core.promo".__empty = null;
-      "core.export".__empty = null;
-      "core.export.markdown".config.extensions = "all";
+      #"core.export".__empty = null;
+      #"core.export.markdown".config.extensions = "all";
       "core.pivot".__empty = null;
       "core.keybinds".config = {
         default_keybinds = true;
