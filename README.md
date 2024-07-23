@@ -2,6 +2,14 @@
 
 Nevica is a text editor based on [Nixvim](https://github.com/nix-community/nixvim) and inspired by [Neve](https://github.com/redyf/Neve) . The project's goal is to have a complete core for `highlighting`, `LSPs`, `debuggers`, `formatters`, `diagnostics`, and `tests`. The support for any programming language can be added simply with a file (languages.nix).
 
+| Nevica Java LSP                                                                                                       | Nevica Python CMP                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| ![nevica lsps](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-lsp-java.png?raw=true) | ![nevica cmps](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-cmp-python.png?raw=true) |
+
+| Nevica C Debugger                                                                                                         | Nevica Go Test                                                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| ![nevica debuggers](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-debug-c.png?raw=true) | ![nevica tests](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-test-go.png?raw=true) |
+
 The different flavours of nevica are:
 
 - `nevica-full` --> IDE with support for all languages
