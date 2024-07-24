@@ -1,17 +1,20 @@
 # Support Table
 
-| Language       | LSP                             | Formatter                       | Linter                          | Debugger          | Test    |
+| Language       | LSP                             | Formatter                       | Diagnostic                      | Debugger          | Test    |
 | -------------- | ------------------------------- | ------------------------------- | ------------------------------- | ----------------- | ------- |
+| Bash           | bashls                          | shfmt                           | zsh                             | /                 | /       |
 | C              | clangd                          | clang_format                    | cppcheck                        | gdb               | /       |
-| Cpp            | clangd                          | clang_format                    | cppcheck                        | gdb ?             | _WIP_   |
-| Rust           | rust-analyzer                   | rust-analyzer                   | rust-analyzer                   | lldb              | **WIP** |
+| Cpp            | clangd                          | clang_format                    | cppcheck                        | gdb               | **WIP** |
+| Docker         | dockerls                        | dockerls                        | hadolint                        | /                 | /       |
+| Docker Compose | docker-compose-language-service | docker-compose-language-service | docker-compose-language-service | /                 | /       |
 | Golang         | gopls                           | gofumpt, goimports, golines     | golangci_lint                   | delve             | go      |
 | Java           | jdtls                           | jdtls                           | checkstyle                      | vscode-java-debug | **WIP** |
-| python         | pyright, ruff                   | black                           | pylint                          | debugpy           | **WIP** |
-| typescript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
-| javascript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
-| lua            | lua-ls                          | stylelua                        | selene                          | /                 | /       |
-| Nix            | nil-ls                          | alejandra                       | statix                          | /                 | /       |
-| Docker         | dockerls                        | dockerls                        | hadolint                        | /                 | /       |
-| Bash           | bashls                          | shfmt                           | zsh                             | /                 | /       |
-| Docker Compose | docker-compose-language-service | docker-compose-language-service | docker-compose-language-service | /                 | /       |
+| Javascript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
+| Kotlin         | kotlin-language-server          | klint                           | ktlint                          | **WIP**           | **WIP** |
+| Lua            | lua-ls                          | stylelua                        | selene                          | /                 | /       |
+| Nix            | nil-ls                          | alejandra, nixfmt, nixpkgs_fmt  | statix                          | statix            | /       |
+| Python         | pyright, ruff                   | black                           | pylint                          | debugpy           | **WIP** |
+| Rust           | rust-analyzer                   | rust-analyzer                   | rust-analyzer                   | lldb              | **WIP** |
+| Scala          | **WIP**                         | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |
+| Typescript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
+| Zig            | **WIP**                         | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |

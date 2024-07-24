@@ -10,5 +10,8 @@
     ./rust.nix
     ./typescript.nix
     ./java.nix
+    ./kotlin.nix
+    ./scala.nix
+    ./zig.nix
   ];
 }

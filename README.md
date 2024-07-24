@@ -45,19 +45,22 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 
 | Language       | LSP   | Formatter | Diagnostic | Debugger | Test |
 | -------------- | ----- | --------- | ---------- | -------- | ---- |
+| Bash           | ✅    | ✅        | ✅         | ❌       | ❌   |
 | C              | ✅    | ✅        | ✅         | ✅       | ⏰   |
 | Cpp            | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Docker         | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Docker Compose | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Golang         | ✅    | ✅ x3     | ✅         | ✅       | ✅   |
 | Java           | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
-| Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Javascript     | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Kotlin         | ✅    | ✅        | ✅         | ⏰       | ⏰   |
 | Lua            | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Nix            | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Docker         | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Bash           | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Docker Compose | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Nix            | ✅    | ✅ x3     | ✅         | ❌       | ❌   |
+| Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
+| Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| Scala          | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
+| Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
+| Zig            | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
 
 Legend:
 
@@ -71,4 +74,3 @@ If you want to see the details about LSP, debugger, etc., go to [Support Table](
 
 - Which-key gives warning, styling is wrong.
   - Solution: wait [this issue](https://github.com/nix-community/nixvim/issues/1901) to close
-- Sometimes codeium tries to autocomplete on save and it gives an error
