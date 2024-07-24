@@ -53,9 +53,22 @@
      adapters = {
        require("neotest-java")({
          ignore_wrapper = false,
-         junit_jar = nil,
+         -- function to determine which runner to use based on project path
+         determine_runner = function(project_root_path)
+           -- return should be "maven" or "gradle"
+           return "gradle"
+         end,
+         -- override the builtin runner discovery behaviour to always use given
+         -- tool. Default is "nil", so no override
+         force_runner = nil,
+         -- if the automatic runner discovery can't uniquely determine whether
+         -- to use Gradle or Maven, fallback to using this runner. Default is
+         -- "maven"
+         fallback_runner = "maven"
        }),
-     },
+      };
+       -- output = { enabled = true, open_on_run = true },
+       -- summary = { enabled = true, },
     })
   '';
 }
