@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{ pkgs, ... }: {
   plugins = {
     typescript-tools = {
       enable = true;
@@ -30,33 +30,50 @@
       enable = true;
       disableAutoInitialization = false;
     };
-    ts-autotag = {
+    ts-autotag = { enable = true; };
+    lsp.servers = { tsserver.enable = false; };
+    neotest.adapters.jest = {
       enable = true;
-    };
-    lsp.servers = {
-      eslint.enable = true;
-      tsserver.enable = false;
-    };
-    # TODO: Edit to use none-ls
-    lint.lintersByFt = {
-      javascript = ["eslint_d"];
-      javascriptreact = ["eslint_d"];
-      typescript = ["eslint_d"];
-      typescriptreact = ["eslint_d"];
+      settings = {
+        jestConfigFile = {
+          __raw = ''
+            function ()
+              local file = vim.fn.expand("%:p")
+              if string.find(file, "/packages/") then
+                return string.match(file, "(.-/[^/]+/)src") .. "jest.config.ts"
+              end
+              return vim.fn.getcwd() .. "/jest.config.ts"
+            end
+          '';
+        };
+        cwd = {
+          __raw = ''
+            function()
+              local file = vim.fn.expand("%:p")
+              if string.find(file, "/packages/") then
+                return string.match(file, "(.-/[^/]+/)src")
+              end
+              return vim.fn.getcwd()
+            end
+          '';
+        };
+      };
     };
   };
+
   # FIX: Debug doesn't work for javascript/typescript
-  extraPlugins = with pkgs.vimUtils; [
-    (buildVimPlugin {
-      name = "vim-dap-vscode-js";
-      src = pkgs.fetchFromGitHub {
-        owner = "mxsdev";
-        repo = "nvim-dap-vscode-js";
-        rev = "e7c05495934a658c8aa10afd995dacd796f76091";
-        sha256 = "sha256-lZABpKpztX3NpuN4Y4+E8bvJZVV5ka7h8x9vL4r9Pjk=";
-      };
-    })
-  ];
+  extraPlugins = with pkgs.vimUtils;
+    [
+      (buildVimPlugin {
+        name = "vim-dap-vscode-js";
+        src = pkgs.fetchFromGitHub {
+          owner = "mxsdev";
+          repo = "nvim-dap-vscode-js";
+          rev = "e7c05495934a658c8aa10afd995dacd796f76091";
+          sha256 = "sha256-lZABpKpztX3NpuN4Y4+E8bvJZVV5ka7h8x9vL4r9Pjk=";
+        };
+      })
+    ];
   extraConfigLua = ''
     local dap, dapui = require("dap"), require("dapui")
     local dap_vscode_js = require("dap-vscode-js")
