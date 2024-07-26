@@ -13,5 +13,6 @@
     ./kotlin.nix
     ./scala.nix
     ./zig.nix
+    ./html-css.nix
   ];
 }
