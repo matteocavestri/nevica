@@ -9,6 +9,8 @@
     ./none-ls/default.nix
     # ----- Languages configurations ------
     ./languages/default.nix
+    # ----- Frameworks configurations ----
+    ./frameworks/default.nix
     # ----- Debugger ----------------------
     ./dap/dap.nix
     # ----- Tests -------------------------
