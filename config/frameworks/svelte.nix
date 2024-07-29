@@ -1,5 +1,7 @@
 {
-  plugins.lsp.servers.svelte = {
-    enable = true;
+  plugins = {
+    lsp.servers.svelte = {
+      enable = true;
+    };
   };
 }

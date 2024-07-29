@@ -41,7 +41,7 @@ You can update your installation with
 nix flake update --extra-experimental-features 'nix-command flakes' --flake github:matteocavestri/nevica
 ```
 
-## Support
+## Supported Languages
 
 | Language       | LSP   | Formatter | Diagnostic | Debugger | Test |
 | -------------- | ----- | --------- | ---------- | -------- | ---- |
@@ -61,6 +61,13 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Scala          | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
 | Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Zig            | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
+
+## Supported Frameworks
+
+| Framework | LSP | Formatter | Diagnostic | Test |
+| --------- | --- | --------- | ---------- | ---- |
+| Vite      | ❌  | ⏰        | ❌         | ⏰   |
+| Svelte    | ✅  | ⏰        | ❌         | ❌   |
 
 Legend:
 
