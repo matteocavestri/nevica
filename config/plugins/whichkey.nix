@@ -7,18 +7,18 @@
       group = "+";
       separator = ""; # ➜
     };
-    registrations = {
-      "<leader>d" = "Debugger";
-      "<leader>f" = "Find";
-      "<leader>g" = "Git";
-      "<leader>s" = "Search";
-      "<leader>w" = "Miscellaneous";
-      "<leader>l" = "Lsp";
-      "<leader>c" = "Code";
-      "<leader>t" = "Test";
-      "<leader>b" = "Buffers";
-      "<leader>n" = "Neorg";
-    };
+    # settings.spec = {
+    #   "<leader>d" = "Debugger";
+    #   "<leader>f" = "Find";
+    #   "<leader>g" = "Git";
+    #   "<leader>s" = "Search";
+    #   "<leader>w" = "Miscellaneous";
+    #   "<leader>l" = "Lsp";
+    #   "<leader>c" = "Code";
+    #   "<leader>t" = "Test";
+    #   "<leader>b" = "Buffers";
+    #   "<leader>n" = "Neorg";
+    # };
     window = {
       border = "none";
       winblend = 0;
