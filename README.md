@@ -58,7 +58,7 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Nix            | ✅    | ✅ x3     | ✅         | ❌       | ❌   |
 | Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
 | Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Scala          | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
+| Scala          | ✅    | ⏰        | ⏰         | ⏰       | ⏰   |
 | Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Zig            | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
 

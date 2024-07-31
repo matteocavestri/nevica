@@ -12,9 +12,9 @@
 | Javascript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
 | Kotlin         | kotlin-language-server          | klint                           | ktlint                          | **WIP**           | **WIP** |
 | Lua            | lua-ls                          | stylelua                        | selene                          | /                 | /       |
-| Nix            | nil-ls                          | alejandra, nixfmt, nixpkgs_fmt  | statix                          | statix            | /       |
+| Nix            | nil-ls                          | alejandra, nixfmt, nixpkgs_fmt  | statix                          | /                 | /       |
 | Python         | pyright, ruff                   | black                           | pylint                          | debugpy           | **WIP** |
 | Rust           | rust-analyzer                   | rust-analyzer                   | rust-analyzer                   | lldb              | **WIP** |
-| Scala          | **WIP**                         | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |
+| Scala          | metals                          | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |
 | Typescript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
 | Zig            | **WIP**                         | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |

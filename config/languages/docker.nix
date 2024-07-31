@@ -31,5 +31,10 @@
         hadolint.enable = true;
       };
     };
+    lsp-format = {
+      lspServersToEnable = [
+        "dockerls"
+      ];
+    };
   };
 }

@@ -6,12 +6,18 @@
         enable = true;
       };
     };
-    none-ls.sources = {
-      formatting = {
-        scalafmt = {
-          enable = true;
-        };
-      };
-    };
+    # none-ls.sources = {
+    #   formatting = {
+    #     scalafmt = {
+    #       enable = true;
+    #     };
+    #   };
+    # };
+    # NOTE: Useing lspformat with metals doesn't work.
+    # lsp-format = {
+    #   lspServersToEnable = [
+    #     "metals"
+    #   ];
+    # };
   };
 }
