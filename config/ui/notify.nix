@@ -1,11 +1,11 @@
 {
   plugins.notify = {
     enable = true;
-    #backgroundColour = "#000000";
-    fps = 60;
-    render = "default";
-    timeout = 500;
+    fps = 30;
+    render = "minimal";
+    timeout = 1000;
     topDown = true;
+    stages = "static";
   };
   extraConfigLua = ''
     local notify = require("notify")
