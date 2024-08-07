@@ -604,6 +604,14 @@
     # NEORG
     {
       mode = "n";
+      key = "<leader>no";
+      action = ":Neorg<CR>";
+      options = {
+        desc = "Neorg";
+      };
+    }
+    {
+      mode = "n";
       key = "<leader>nw";
       action = ":Neorg workspace<CR>";
       options = {

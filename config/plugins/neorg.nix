@@ -4,6 +4,7 @@
   };
   plugins.neorg = {
     enable = true;
+    lazyLoading = true;
     modules = {
       "core.defaults".__empty = null;
       "core.concealer".__empty = null;
