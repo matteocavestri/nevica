@@ -23,11 +23,6 @@
         };
       };
     };
-    # lsp-format = {
-    #   lspServersToEnable = [
-    #     "rust-analyzer"
-    #   ];
-    # };
   };
   # FIX: Neotest does not work on rust
   extraConfigLua = ''

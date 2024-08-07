@@ -16,7 +16,7 @@ The different flavours of nevica are:
 - `nevica-cc` --> IDE for C/C++
 - `nevica-go` --> IDE for Go
 - `nevica-rust` --> IDE for Rust
-- `nevica-java` --> IDE for Java
+- `nevica-jvm` --> IDE for Java, Scala, Kotlin
 - `nevica-python` --> IDE for Python
 
 ## How to Use
@@ -46,8 +46,8 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Language       | LSP   | Formatter | Diagnostic | Debugger | Test |
 | -------------- | ----- | --------- | ---------- | -------- | ---- |
 | Bash           | ✅    | ✅        | ✅         | ❌       | ❌   |
-| C              | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Cpp            | ✅    | ✅        | ✅         | ✅       | ⏰   |
+| C              | ✅    | ✅        | ✅         | ✅       | 🔜   |
+| Cpp            | ✅    | ✅        | ✅         | ✅       | 🔜   |
 | Docker         | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Docker Compose | ✅    | ✅        | ✅         | ❌       | ❌   |
 | Golang         | ✅    | ✅ x3     | ✅         | ✅       | ✅   |
@@ -58,9 +58,9 @@ nix flake update --extra-experimental-features 'nix-command flakes' --flake gith
 | Nix            | ✅    | ✅ x3     | ✅         | ❌       | ❌   |
 | Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
 | Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Scala          | ✅    | ⏰        | ⏰         | ⏰       | ⏰   |
+| Scala          | ✅    | ✅        | ✅         | ⏰       | ⏰   |
 | Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Zig            | ⏰    | ⏰        | ⏰         | ⏰       | ⏰   |
+| Zig            | ✅    | ✅        | ✅         | 🔜       | 🔜   |
 
 ## Supported Frameworks
 
@@ -74,6 +74,7 @@ Legend:
 - ✅ --> Full support
 - ❌ --> Not implemented / not needed
 - ⏰ --> Work in progress
+- 🔜 --> Future implementation
 
 If you want to see the details about LSP, debugger, etc., go to [Support Table](https://github.com/matteocavestri/nevica/blob/main/docs/support-table.md)
 

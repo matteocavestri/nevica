@@ -9,6 +9,8 @@
     ./none-ls/default.nix
     # ----- Languages configurations ------
     ./languages/java.nix
+    ./languages/scala.nix
+    ./languages/kotlin.nix
     # ----- Debugger ----------------------
     ./dap/dap.nix
     # ----- Tests -------------------------

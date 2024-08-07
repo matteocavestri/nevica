@@ -15,6 +15,6 @@
 | Nix            | nil-ls                          | alejandra, nixfmt, nixpkgs_fmt  | statix                          | /                 | /       |
 | Python         | pyright, ruff                   | black                           | pylint                          | debugpy           | **WIP** |
 | Rust           | rust-analyzer                   | rust-analyzer                   | rust-analyzer                   | lldb              | **WIP** |
-| Scala          | metals                          | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |
+| Scala          | metals                          | scalafmt                        | metals                          | **WIP**           | **WIP** |
 | Typescript     | typescript-tools                | prettier                        | eslint                          | /                 | /       |
-| Zig            | **WIP**                         | **WIP**                         | **WIP**                         | **WIP**           | **WIP** |
+| Zig            | zls                             | zls                             | zls                             | **WIP**           | **WIP** |
