@@ -79,7 +79,5 @@ If you want to see the details about LSP, debugger, etc., go to [Support Table](
 
 ## Known Issues
 
-- Which-key gives warning, styling is wrong.
-  - Solution: wait [this issue](https://github.com/nix-community/nixvim/issues/1901) to close
 - Long startup time due to Neorg.
   - Solution: lazyload Neorg.

@@ -13,5 +13,6 @@
     ./surround.nix
     ./commentary.nix
     ./mini.nix
+    ./lazy.nix
   ];
 }
