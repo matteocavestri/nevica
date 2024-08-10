@@ -504,9 +504,9 @@
     {
       mode = "n";
       key = "<leader>gg";
-      action = "<cmd>Neogit<CR>";
+      action = "<cmd>LazyGit<CR>";
       options = {
-        desc = "Neogit";
+        desc = "LazyGit";
       };
     }
     {

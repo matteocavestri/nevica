@@ -35,5 +35,7 @@
     ./options.nix
     # ----- Neorg -------------------------
     ./plugins/neorg.nix
+    # ----- Performance -------------------
+    ./performance.nix
   ];
 }

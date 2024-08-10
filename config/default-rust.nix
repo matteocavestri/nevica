@@ -31,5 +31,7 @@
     ./keymaps.nix
     # ----- Options -----------------------
     ./options.nix
+    # ----- Performance -------------------
+    ./performance.nix
   ];
 }

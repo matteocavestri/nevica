@@ -11,7 +11,8 @@
       enable = true;
     };
     neogit = {
-      enable = true;
+      enable = false;
     };
+    lazygit.enable = true;
   };
 }
