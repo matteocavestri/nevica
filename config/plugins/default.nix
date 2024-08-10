@@ -14,5 +14,6 @@
     ./commentary.nix
     ./mini.nix
     ./lazy.nix
+    # ./compiler.nix
   ];
 }

@@ -22,10 +22,6 @@
       group = "Miscellaneous";
     }
     {
-      __unkeyed-1 = "<leader>l";
-      group = "Lsp";
-    }
-    {
       __unkeyed-1 = "<leader>c";
       group = "Code";
     }

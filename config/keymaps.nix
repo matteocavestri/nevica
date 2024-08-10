@@ -233,7 +233,7 @@
     # TROUBLE
     {
       mode = "n";
-      key = "<leader>lt";
+      key = "<leader>clt";
       action = "<cmd>Trouble diagnostics<cr>";
       options = {
         silent = true;
@@ -242,7 +242,7 @@
     }
     {
       mode = "n";
-      key = "<leader>ll";
+      key = "<leader>cll";
       action = "<cmd>TodoQuickFix<cr>";
       options = {
         silent = true;
@@ -253,7 +253,7 @@
     # LSPSAGA
     {
       mode = "n";
-      key = "<leader>ld";
+      key = "<leader>cld";
       action = "<cmd>Lspsaga finder def<CR>";
       options = {
         desc = "Goto Definition";
@@ -262,7 +262,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lr";
+      key = "<leader>clr";
       action = "<cmd>Lspsaga finder ref<CR>";
       options = {
         desc = "Goto References";
@@ -271,7 +271,7 @@
     }
     {
       mode = "n";
-      key = "lD";
+      key = "<leader>clD";
       action = "<cmd>Lspsaga show_line_diagnostics<CR>";
       options = {
         desc = "Goto Declaration";
@@ -280,7 +280,7 @@
     }
     {
       mode = "n";
-      key = "<leader>li";
+      key = "<leader>cli";
       action = "<cmd>Lspsaga finder imp<CR>";
       options = {
         desc = "Goto Implementation";
@@ -289,7 +289,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lT";
+      key = "<leader>clT";
       action = "<cmd>Lspsaga peek_type_definition<CR>";
       options = {
         desc = "Type Definition";
@@ -298,7 +298,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lh";
+      key = "<leader>clh";
       action = "<cmd>Lspsaga hover_doc<CR>";
       options = {
         desc = "LSP Hover";
@@ -307,7 +307,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lo";
+      key = "<leader>clo";
       action = "<cmd>Lspsaga outline<CR>";
       options = {
         desc = "LSP Outline";
@@ -316,7 +316,7 @@
     }
     {
       mode = "n";
-      key = "<leader>lR";
+      key = "<leader>clR";
       action = "<cmd>Lspsaga rename<CR>";
       options = {
         desc = "LSP Rename";
@@ -343,7 +343,7 @@
     }
     {
       mode = "n";
-      key = "<leader>cl";
+      key = "<leader>cn";
       action = "<cmd>Lspsaga diagnostic_jump_next<CR>";
       options = {
         desc = "Next Diagnostic";
@@ -664,6 +664,15 @@
       action = ":Neorg generate-workspace-summary<CR>";
       options = {
         desc = "Generate workspace summary";
+      };
+    }
+    # COMPILER
+    {
+      mode = "n";
+      key = "<leader>cc";
+      action = ":CompilerOpen<CR>";
+      options = {
+        desc = "Code Compile";
       };
     }
   ];
