@@ -19,7 +19,7 @@
     }
     {
       __unkeyed-1 = "<leader>w";
-      group = "Miscellaneous";
+      group = "Msc";
     }
     {
       __unkeyed-1 = "<leader>c";
@@ -42,10 +42,12 @@ in {
   plugins.which-key = {
     enable = true;
     # ignoreMissing = false;
-    icons = {
-      breadcrumb = "»";
-      group = "+";
-      separator = ""; # ➜
+    settings = {
+      icons = {
+        breadcrumb = "»";
+        group = "+";
+        separator = ""; # ➜
+      };
     };
     # settings.spec = {
     #   "<leader>d" = "Debugger";

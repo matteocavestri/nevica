@@ -1,5 +1,5 @@
 {
-  description = "Nevica configuration";
+  description = "Nevica editor";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";

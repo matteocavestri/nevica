@@ -50,25 +50,13 @@
   };
   extraConfigLua = ''
     require("neotest").setup({
-     adapters = {
-       require("neotest-java")({
-         ignore_wrapper = false,
-         -- function to determine which runner to use based on project path
-         determine_runner = function(project_root_path)
-           -- return should be "maven" or "gradle"
-           return "gradle"
-         end,
-         -- override the builtin runner discovery behaviour to always use given
-         -- tool. Default is "nil", so no override
-         force_runner = nil,
-         -- if the automatic runner discovery can't uniquely determine whether
-         -- to use Gradle or Maven, fallback to using this runner. Default is
-         -- "maven"
-         fallback_runner = "maven"
-       }),
-      };
-       -- output = { enabled = true, open_on_run = true },
-       -- summary = { enabled = true, },
+      adapters = {
+        require("neotest-java")({
+            ignore_wrapper = false, -- whether to ignore maven/gradle wrapper
+            junit_jar = nil,
+            -- default: .local/share/nvim/neotest-java/junit-platform-console-standalone-[version].jar
+        })
+      }
     })
   '';
 }

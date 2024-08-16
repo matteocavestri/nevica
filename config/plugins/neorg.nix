@@ -4,7 +4,7 @@
   };
   plugins.neorg = {
     enable = true;
-    lazyLoading = true;
+    # lazyLoading = true;
     modules = {
       "core.defaults".__empty = null;
       "core.concealer".__empty = null;
@@ -60,23 +60,23 @@
         sha256 = "04ppkwlg779iyja5iz3b9xdy0bdfp6nya3wmlri0z63vp0fn0vy3";
       };
     })
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "plenary";
-      src = pkgs.fetchFromGitHub {
-        owner = "nvim-lua";
-        repo = "plenary.nvim";
-        rev = "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683";
-        sha256 = "0n2p8krzwiw682f0yb6n8faamffpp336rjy50pbqf3jmc6czd5z4";
-      };
-    })
-    (pkgs.vimUtils.buildVimPlugin {
-      name = "nvim-nio";
-      src = pkgs.fetchFromGitHub {
-        owner = "nvim-neotest";
-        repo = "nvim-nio";
-        rev = "a428f309119086dc78dd4b19306d2d67be884eee";
-        sha256 = "0n40q6znpy1xzywd1hwyivx7y1n0i0fcp3m7jp0vgipm6qssda4b";
-      };
-    })
+    # (pkgs.vimUtils.buildVimPlugin {
+    #   name = "plenary";
+    #   src = pkgs.fetchFromGitHub {
+    #     owner = "nvim-lua";
+    #     repo = "plenary.nvim";
+    #     rev = "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683";
+    #     sha256 = "0n2p8krzwiw682f0yb6n8faamffpp336rjy50pbqf3jmc6czd5z4";
+    #   };
+    # })
+    # (pkgs.vimUtils.buildVimPlugin {
+    #   name = "nvim-nio";
+    #   src = pkgs.fetchFromGitHub {
+    #     owner = "nvim-neotest";
+    #     repo = "nvim-nio";
+    #     rev = "a428f309119086dc78dd4b19306d2d67be884eee";
+    #     sha256 = "0n40q6znpy1xzywd1hwyivx7y1n0i0fcp3m7jp0vgipm6qssda4b";
+    #   };
+    # })
   ];
 }
