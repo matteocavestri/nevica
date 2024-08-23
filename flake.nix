@@ -59,12 +59,18 @@
             import ./config/default-python.nix; # import the Python module
           extraSpecialArgs = {};
         };
+        nixvimModuleMinimal = {
+          inherit pkgs;
+          module = import ./config/default-minimal.nix; # import the Minimal module
+          extraSpecialArgs = {};
+        };
         nvim = nixvim'.makeNixvimWithModule nixvimModuleDefault;
         nvimGo = nixvim'.makeNixvimWithModule nixvimModuleGo;
         nvimRust = nixvim'.makeNixvimWithModule nixvimModuleRust;
         nvimJvm = nixvim'.makeNixvimWithModule nixvimModuleJvm;
         nvimCC = nixvim'.makeNixvimWithModule nixvimModuleCC;
         nvimPython = nixvim'.makeNixvimWithModule nixvimModulePython;
+        nvimMinimal = nixvim'.makeNixvimWithModule nixvimModuleMinimal;
       in {
         checks = {
           default =
@@ -79,6 +85,7 @@
           nevica-jvm = nvimJvm;
           nevica-cc = nvimCC;
           nevica-python = nvimPython;
+          nevica-minimal = nvimMinimal;
         };
 
         devShells = {

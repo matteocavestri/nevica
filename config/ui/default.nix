@@ -5,7 +5,6 @@
     ./alpha.nix
     ./noice.nix
     ./notify.nix
-    ./staline.nix
     ./neotree.nix
     ./indent.nix
   ];
