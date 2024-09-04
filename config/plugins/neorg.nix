@@ -26,6 +26,7 @@
           workspaces = {
             home = "~/notes/home";
             work = "~/notes/work";
+            dotfiles = "~/.dotfiles/docs";
           };
           default_workspace = "home";
         };
