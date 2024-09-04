@@ -29,7 +29,7 @@
           workspaces = {
             home = "~/notes/home";
             work = "~/notes/work";
-            dotfiles = "~/.dotfiles/docs";
+            dotfiles = "~/.dotfiles/docs/neorg";
           };
           default_workspace = "home";
         };
