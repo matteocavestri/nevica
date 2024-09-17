@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{pkgs, ...}: {
   plugins = {
     typescript-tools = {
       enable = true;
@@ -30,8 +30,8 @@
       enable = true;
       disableAutoInitialization = false;
     };
-    ts-autotag = { enable = true; };
-    lsp.servers = { tsserver.enable = false; };
+    ts-autotag = {enable = true;};
+    lsp.servers.ts-ls.enable = false;
     neotest.adapters.jest = {
       enable = true;
       settings = {
@@ -62,18 +62,17 @@
   };
 
   # FIX: Debug doesn't work for javascript/typescript
-  extraPlugins = with pkgs.vimUtils;
-    [
-      (buildVimPlugin {
-        name = "vim-dap-vscode-js";
-        src = pkgs.fetchFromGitHub {
-          owner = "mxsdev";
-          repo = "nvim-dap-vscode-js";
-          rev = "e7c05495934a658c8aa10afd995dacd796f76091";
-          sha256 = "sha256-lZABpKpztX3NpuN4Y4+E8bvJZVV5ka7h8x9vL4r9Pjk=";
-        };
-      })
-    ];
+  extraPlugins = with pkgs.vimUtils; [
+    (buildVimPlugin {
+      name = "vim-dap-vscode-js";
+      src = pkgs.fetchFromGitHub {
+        owner = "mxsdev";
+        repo = "nvim-dap-vscode-js";
+        rev = "e7c05495934a658c8aa10afd995dacd796f76091";
+        sha256 = "sha256-lZABpKpztX3NpuN4Y4+E8bvJZVV5ka7h8x9vL4r9Pjk=";
+      };
+    })
+  ];
   extraConfigLua = ''
     local dap, dapui = require("dap"), require("dapui")
     local dap_vscode_js = require("dap-vscode-js")
