@@ -1,8 +1,7 @@
-{pkgs, ...}: {
+{
   plugins.alpha = {
     enable = true;
     theme = null;
-    iconsPackage = pkgs.vimPlugins.nvim-web-devicons;
     layout = let
       padding = val: {
         type = "padding";
