@@ -31,7 +31,7 @@
       disableAutoInitialization = false;
     };
     ts-autotag = {enable = true;};
-    lsp.servers.ts-ls.enable = false;
+    lsp.servers.ts_ls.enable = false;
     neotest.adapters.jest = {
       enable = true;
       settings = {

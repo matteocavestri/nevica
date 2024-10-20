@@ -1,7 +1,7 @@
 {
   plugins = {
     lsp.servers = {
-      nil-ls = {
+      nil_ls = {
         enable = true;
         filetypes = ["nix"];
         settings.nix.flake.autoArchive = true;

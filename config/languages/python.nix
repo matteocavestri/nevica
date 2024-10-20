@@ -4,7 +4,7 @@
       pyright = {
         enable = true;
       };
-      ruff-lsp = {
+      ruff_lsp = {
         enable = true;
       };
     };

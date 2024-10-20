@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   plugins = {
     lsp.servers = {
-      kotlin-language-server = {
+      kotlin_language_server = {
         enable = true;
       };
     };

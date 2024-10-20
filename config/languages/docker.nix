@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   plugins = {
     lsp.servers = {
-      docker-compose-language-service = {
+      docker_compose_language_service = {
         enable = true;
         filetypes = [
           "yaml"
