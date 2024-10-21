@@ -8,6 +8,7 @@
   ];
 
   nevica = {
+    # NEVICA UI DEFAULT VALUES
     ui = {
       # Dashboard is enabled by default
       startpage = {
@@ -28,13 +29,18 @@
         neotree.enable = lib.mkDefault true;
       };
     };
+
+    # NEVICA NIXVIM DEFAULT VALUES
     nixvim = {
       # Recommended Nixvim performance tuning
       performance.enableRecommended = lib.mkDefault true;
       options.enableRecommended = lib.mkDefault true;
     };
+
+    # NEVICA UTILS DEFAULT VALUES
     utils = {
-      # Telescope and telescope plugins are enabled by default. You can override it using lib.mkForce (e.g. nevica.utils.telescope.undo.enable = lib.mkForce false;)
+      # Telescope and telescope plugins are enabled by default.
+      # You can override it using lib.mkForce (e.g. nevica.utils.telescope.undo.enable = lib.mkForce false;)
       telescope = {
         enable = lib.mkDefault true;
         fzf-native.enable = lib.mkDefault true;
@@ -52,11 +58,15 @@
         toggleterm.enable = lib.mkDefault true;
       };
     };
+
+    # NEVICA CODEUTILS DEFAULT VALUES
     codeUtils = {
       completion.cmp.enable = lib.mkDefault true;
       snippet.luasnip.enable = lib.mkDefault true;
       highlighting.treesitter.enable = lib.mkDefault true;
     };
+
+    # NEVICA MAPPINGS DEFAULT VALUES
     mappings = {
       whichKey.enable = lib.mkDefault true;
     };

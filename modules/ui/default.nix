@@ -1,4 +1,4 @@
-{lib, ...}: {
+{
   imports = [
     ./startpage.nix
     ./statusbar.nix
@@ -7,23 +7,4 @@
     ./noice.nix
     ./filetree.nix
   ];
-
-  nevica.ui = {
-    startpage = {
-      dashboard.enable = lib.mkDefault true;
-    };
-    statusbar = {
-      lualine.enable = lib.mkDefault true;
-    };
-    colorscheme = {
-      base16.enable = lib.mkDefault true;
-    };
-    bufferbar = {
-      bufferline.enable = lib.mkDefault true;
-    };
-    noice.enable = lib.mkDefault true;
-    filetree = {
-      neotree.enable = lib.mkDefault true;
-    };
-  };
 }

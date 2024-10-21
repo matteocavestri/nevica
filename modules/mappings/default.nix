@@ -1,4 +1,4 @@
-{lib, ...}: {
+{
   imports = [
     ./whichkey.nix
     ./neotree-keymaps.nix
@@ -8,8 +8,4 @@
   ];
 
   globals.mapleader = " ";
-
-  nevica.mappings = {
-    whichKey.enable = lib.mkDefault true;
-  };
 }
