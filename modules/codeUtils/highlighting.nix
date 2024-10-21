@@ -14,6 +14,8 @@
       treesitter = lib.mkIf config.nevica.codeUtils.highlighting.treesitter.enable {
         enable = true;
         package = pkgs.vimPlugins.nvim-treesitter;
+        folding = true;
+        nixvimInjections = true;
         settings = {
           indent.enable = true;
           highlight.enable = true;

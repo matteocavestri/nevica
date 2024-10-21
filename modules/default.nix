@@ -23,6 +23,7 @@
     nixvim = {
       # Recommended Nixvim performance tuning
       performance.enableRecommended = lib.mkDefault true;
+      options.enableRecommended = lib.mkDefault true;
     };
     utils = {
       # Telescope and telescope plugins are enabled by default. You can override it using lib.mkForce (e.g. nevica.utils.telescope.undo.enable = lib.mkForce false;)
