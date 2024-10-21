@@ -62,6 +62,9 @@
       terminal = {
         toggleterm.enable = lib.mkDefault true;
       };
+      generalPlugins = {
+        tmuxNavigator.enable = lib.mkDefault true;
+      };
     };
 
     # NEVICA CODEUTILS DEFAULT VALUES
@@ -83,6 +86,7 @@
         ui.enable = lib.mkDefault true;
         virtualText.enable = lib.mkDefault true;
       };
+      testing.neotest.enable = lib.mkDefault true;
     };
 
     # NEVICA MAPPINGS DEFAULT VALUES

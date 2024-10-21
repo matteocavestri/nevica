@@ -6,5 +6,6 @@
     ./languageServer.nix
     ./formatting.nix
     ./debugging.nix
+    ./testing.nix
   ];
 }

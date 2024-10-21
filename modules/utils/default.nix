@@ -4,5 +4,6 @@
     ./mini.nix
     ./notify.nix
     ./terminal.nix
+    ./generalPlugins.nix
   ];
 }
