@@ -19,6 +19,9 @@
       colorscheme = {
         base16.enable = lib.mkDefault true;
       };
+      bufferbar = {
+        bufferline.enable = lib.mkDefault true;
+      };
     };
     nixvim = {
       # Recommended Nixvim performance tuning

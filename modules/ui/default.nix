@@ -3,6 +3,7 @@
     ./startpage.nix
     ./statusbar.nix
     ./colorscheme.nix
+    ./bufferbar.nix
   ];
 
   nevica.ui = {
@@ -14,6 +15,9 @@
     };
     colorscheme = {
       base16.enable = lib.mkDefault true;
+    };
+    bufferbar = {
+      bufferline.enable = lib.mkDefault true;
     };
   };
 }

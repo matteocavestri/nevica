@@ -17,7 +17,8 @@
       modules = {
         icons.enable = true; #Mini icons (mockDevIcons)
         indentscope.enable = true; # Indent highlight
-        animate.enable = true; # Animate your cursor movement
+        # Animate is a beautifull feature, but it brokes mouse scrolling so it is disabled by default
+        animate.enable = false; # Animate your cursor movement
         pairs.enable = true; # Auto add closing bracket
         surround.enable = true; # Surround text with bracket using saiw and then choose a surrounding
         comment.enable = true; # Add comment using gcc keymap
