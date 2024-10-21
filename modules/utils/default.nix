@@ -3,6 +3,7 @@
     ./telescope.nix
     ./mini.nix
     ./notify.nix
+    ./terminal.nix
   ];
 
   nevica.utils = {
@@ -17,6 +18,9 @@
     };
     notify = {
       nvimNotify.enable = lib.mkDefault true;
+    };
+    terminal = {
+      toggleterm.enable = lib.mkDefault true;
     };
   };
 }

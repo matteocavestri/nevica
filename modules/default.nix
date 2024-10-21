@@ -47,6 +47,9 @@
       notify = {
         nvimNotify.enable = lib.mkDefault true;
       };
+      terminal = {
+        toggleterm.enable = lib.mkDefault true;
+      };
     };
     codeUtils = {
       completion.cmp.enable = lib.mkDefault true;
