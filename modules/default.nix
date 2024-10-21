@@ -40,6 +40,9 @@
       mini = {
         enable = lib.mkDefault true;
       };
+      notify = {
+        nvimNotify.enable = lib.mkDefault true;
+      };
     };
     codeUtils = {
       completion.cmp.enable = lib.mkDefault true;
