@@ -5,6 +5,7 @@
     ./colorscheme.nix
     ./bufferbar.nix
     ./noice.nix
+    ./filetree.nix
   ];
 
   nevica.ui = {
@@ -21,5 +22,8 @@
       bufferline.enable = lib.mkDefault true;
     };
     noice.enable = lib.mkDefault true;
+    filetree = {
+      neotree.enable = lib.mkDefault true;
+    };
   };
 }
