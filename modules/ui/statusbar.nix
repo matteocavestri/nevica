@@ -18,9 +18,12 @@
         settings = {
           extensions = ["fzf"];
           options = {
-            globalstatus = true;
+            # globalstatus is set to false, so lualine doesn't appear inside DapUI
+            globalstatus = false;
             always_divide_middle = true;
-            ignore_focus = ["neo-tree"];
+            ignore_focus = [
+              "neo-tree"
+            ];
             theme = "auto";
             component_separators = {
               left = "|";

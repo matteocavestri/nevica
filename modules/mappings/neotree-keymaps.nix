@@ -1,6 +1,5 @@
 {
   keymaps = [
-    # NEOTREE
     {
       mode = "n";
       key = "<leader>e";

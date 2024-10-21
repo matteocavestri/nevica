@@ -62,7 +62,7 @@
             # treesitter_context = true;
             telescope.enabled = lib.mkIf config.nevica.utils.telescope.enable true;
             mini.enabled = lib.mkIf config.nevica.utils.mini.enable true;
-            native_lsp = lib.mkIf config.nevica.codeUtils.lsp.enable {
+            native_lsp = lib.mkIf config.nevica.codeUtils.languageServer.enable {
               enabled = true;
               inlay_hints = {
                 background = true;

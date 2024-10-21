@@ -69,7 +69,11 @@
       completion.cmp.enable = lib.mkDefault true;
       snippet.luasnip.enable = lib.mkDefault true;
       highlighting.treesitter.enable = lib.mkDefault true;
-      lsp.enable = lib.mkDefault true;
+      languageServer = {
+        enable = lib.mkDefault true;
+        trouble.enable = lib.mkDefault true;
+        lspSaga.enable = lib.mkDefault true;
+      };
       formatting = {
         lspFormat.enable = lib.mkDefault true;
         noneLs.enable = lib.mkDefault true;

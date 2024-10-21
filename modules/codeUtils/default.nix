@@ -3,7 +3,7 @@
     ./completion.nix
     ./snippet.nix
     ./highlighting.nix
-    ./lsp.nix
+    ./languageServer.nix
     ./formatting.nix
     ./debugging.nix
   ];
