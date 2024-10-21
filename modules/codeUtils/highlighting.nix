@@ -19,13 +19,13 @@
         settings = {
           indent.enable = true;
           highlight.enable = true;
+          auto_install = true;
           ensure_installed = [
             "git_config"
             "git_rebase"
             "gitattributes"
             "gitcommit"
             "gitignore"
-            "nix"
           ];
         };
       };

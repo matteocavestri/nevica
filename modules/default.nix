@@ -5,6 +5,7 @@
     ./utils
     ./codeUtils
     ./mappings
+    ./languages
   ];
 
   nevica = {
@@ -18,8 +19,12 @@
       statusbar = {
         lualine.enable = lib.mkDefault true;
       };
+      # The default colorscheme is catppuccin mocha.
+      # base16 is enabled, so you can see other themes using <leader>st
+      # If you want to use base16 disable catppuccin. (Catppuccin has better support)
       colorscheme = {
         base16.enable = lib.mkDefault true;
+        catppuccin.enable = lib.mkDefault true;
       };
       bufferbar = {
         bufferline.enable = lib.mkDefault true;
@@ -69,11 +74,21 @@
         lspFormat.enable = lib.mkDefault true;
         noneLs.enable = lib.mkDefault true;
       };
+      debugging.dap = {
+        enable = lib.mkDefault true;
+        ui.enable = lib.mkDefault true;
+        virtualText.enable = lib.mkDefault true;
+      };
     };
 
     # NEVICA MAPPINGS DEFAULT VALUES
     mappings = {
       whichKey.enable = lib.mkDefault true;
+    };
+
+    # NEVICA LANGUAGES DEFAULT VALUES
+    languages = {
+      nix.enable = lib.mkDefault true;
     };
   };
 }
