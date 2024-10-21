@@ -3,6 +3,7 @@
     ./ui
     ./nixvim
     ./utils
+    ./codeUtils
   ];
 
   nevica = {
@@ -14,6 +15,9 @@
       # Lualine is enabled by default
       statusbar = {
         lualine.enable = lib.mkDefault true;
+      };
+      colorscheme = {
+        base16.enable = lib.mkDefault true;
       };
     };
     nixvim = {
@@ -32,6 +36,11 @@
       mini = {
         enable = lib.mkDefault true;
       };
+    };
+    codeUtils = {
+      completion.cmp.enable = lib.mkDefault true;
+      snippet.luasnip.enable = lib.mkDefault true;
+      highlighting.treesitter.enable = lib.mkDefault true;
     };
   };
 }
