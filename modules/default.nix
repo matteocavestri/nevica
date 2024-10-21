@@ -22,6 +22,7 @@
       bufferbar = {
         bufferline.enable = lib.mkDefault true;
       };
+      noice.enable = lib.mkDefault true;
     };
     nixvim = {
       # Recommended Nixvim performance tuning

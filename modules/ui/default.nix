@@ -4,6 +4,7 @@
     ./statusbar.nix
     ./colorscheme.nix
     ./bufferbar.nix
+    ./noice.nix
   ];
 
   nevica.ui = {
@@ -19,5 +20,6 @@
     bufferbar = {
       bufferline.enable = lib.mkDefault true;
     };
+    noice.enable = lib.mkDefault true;
   };
 }
