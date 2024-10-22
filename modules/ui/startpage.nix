@@ -32,7 +32,7 @@
                 action = {
                   __raw = "function(path) vim.cmd('Telescope find_files') end";
                 };
-                group = "highlight group";
+                group = "highlight";
                 desc = " Files";
                 icon_hl = "@variable";
                 key = "f";
@@ -42,7 +42,7 @@
                   __raw = "function(path) vim.cmd('Telescope live_grep') end";
                 };
                 desc = " Grep";
-                group = "highlight group";
+                group = "highlight";
                 key = "g";
               }
               {
@@ -50,7 +50,7 @@
                   __raw = "function(path) vim.cmd('Telescope oldfiles') end";
                 };
                 desc = " Recents";
-                group = "highlight group";
+                group = "highlight";
                 key = "r";
               }
             ];

@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  pkgs,
   ...
 }: {
   options = {
@@ -13,13 +14,23 @@
       ];
       lsp.servers.nil_ls = {
         enable = true;
+        package = pkgs.nil;
         filetypes = ["nix"];
         settings.nix.flake.autoArchive = true;
       };
       none-ls.sources = {
-        diagnostics.statix.enable = true;
-        formatting.alejandra.enable = true;
-        code_actions.statix.enable = true;
+        diagnostics.statix = {
+          enable = true;
+          package = pkgs.statix;
+        };
+        formatting.alejandra = {
+          enable = true;
+          package = pkgs.alejandra;
+        };
+        code_actions.statix = {
+          enable = true;
+          package = pkgs.statix;
+        };
       };
     };
   };

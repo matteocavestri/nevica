@@ -104,6 +104,9 @@
     # NEVICA LANGUAGES DEFAULT VALUES
     languages = {
       nix.enable = lib.mkDefault true;
+      golang.enable = lib.mkDefault false;
+      cc.enable = lib.mkDefault false;
+      python.enable = lib.mkDefault false;
     };
   };
 }
