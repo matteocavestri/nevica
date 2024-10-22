@@ -29,6 +29,10 @@
           ];
         };
       };
+      treesitter-context = {
+        enable = true;
+        package = pkgs.vimPlugins.nvim-treesitter-context;
+      };
     };
   };
 }

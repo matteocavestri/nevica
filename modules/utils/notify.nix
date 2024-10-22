@@ -16,7 +16,7 @@
         package = pkgs.vimPlugins.nvim-notify;
         fps = 30;
         render = "minimal";
-        timeout = 1000;
+        timeout = 3000;
         topDown = true;
         stages = "static";
       };

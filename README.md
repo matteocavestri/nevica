@@ -1,84 +1,71 @@
-# Nevica
+# ❄️ Nevica: Your Ultimate Vim-based IDE
 
-Nevica is a text editor based on [Nixvim](https://github.com/nix-community/nixvim) and inspired by [Neve](https://github.com/redyf/Neve) . The project's goal is to have a complete core for `highlighting`, `LSPs`, `debuggers`, `formatters`, `diagnostics`, and `tests`. The support for any programming language can be added simply with a file (languages.nix).
+**Nevica** is a Nixvim-based distribution designed to provide a complete IDE experience directly in Vim. 🌟 Whether you’re coding in languages like C, Python, Golang, or Nix, **Nevica** equips you with all the essential tools you need for maximum productivity! 🚀
 
-| Nevica Java LSP                                                                                                       | Nevica Python CMP                                                                                                       |
-| --------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| ![nevica lsps](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-lsp-java.png?raw=true) | ![nevica cmps](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-cmp-python.png?raw=true) |
+Configured to offer support for each programming language, **Nevica** allows you to quickly enable features for specific languages through its **flavours** menu (available in `./profiles`) or configure utilities in the `./modules/languages` directory.
 
-| Nevica C Debugger                                                                                                         | Nevica Go Test                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| ![nevica debuggers](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-debug-c.png?raw=true) | ![nevica tests](https://raw.githubusercontent.com/matteocavestri/images/main/screenshots/nevica-test-go.png?raw=true) |
+## 🚀 **How to Install**
 
-The different flavours of nevica are:
-
-- `nevica-full` --> IDE with support for all languages
-- `nevica-cc` --> IDE for C/C++
-- `nevica-go` --> IDE for Go
-- `nevica-rust` --> IDE for Rust
-- `nevica-jvm` --> IDE for Java, Scala, Kotlin
-- `nevica-python` --> IDE for Python
-
-## How to Use
-
-You can run the packages with the command
+All you need is **Nix** (available on any OS). To get started, just run:
 
 ```bash
+nix run github:matteocavestri/nevica#nevica
+# or for a specific flavour
 nix run github:matteocavestri/nevica#flavour-name
-# e.g. nix run github:matteocavestri/nevica#nevica-go
 ```
 
-You can run a devShell with experimental flake support
+## 🔧 **Key Features**
 
-```bash
-nix develop --extra-experimental-features 'nix-command flakes' github:matteocavestri/nevica#flavour-name
-# e.g. nix develop --extra-experimental-features 'nix-command flakes' github:matteocavestri/nevica#nevica-go
+Nevica provides everything you need to work seamlessly, including:
+
+- 🎨 **Syntax Highlighting**: Beautiful code coloring with [Treesitter](https://github.com/nvim-treesitter/nvim-treesitter).
+- 🧠 **Language Server Protocol (LSP)**: Full LSP support for a smooth coding experience.
+- 🔍 **File Finder**: Quickly find files and symbols with [Telescope](https://github.com/nvim-telescope/telescope.nvim).
+- 🐛 **Debugging**: Integrated debugging with [nvim-dap](https://github.com/mfussenegger/nvim-dap) and [dap-ui](https://github.com/rcarriga/nvim-dap-ui).
+- ⚙️ **Completion**: Smart code completion with [nvim-cmp](https://github.com/hrsh7th/nvim-cmp).
+- 📝 **Formatter**: Automatic code formatting with `lsp_format` and [none_ls](https://github.com/nvimtools/none-ls.nvim).
+- 🚨 **Diagnostics & Code Actions**: Linting, diagnostics, and contextual actions with [none_ls](https://github.com/nvimtools/none-ls.nvim).
+- 🗂️ **File Tree**: Easily navigate your files with [Neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim).
+- 🎹 **Keymap Guide**: Can’t remember the keybindings? No worries, [WhichKey](https://github.com/folke/which-key.nvim) has you covered!
+- 🧪 **Testing Framework**: Run your tests effortlessly with [Neotest](https://github.com/nvim-neotest/neotest).
+- 🔍 **Git Integration**: Optimized Git management with [LazyGit](https://github.com/jesseduffield/lazygit).
+- 🔧 **And much more...**: Explore the countless features and customizations that Nevica offers.
+
+## ✨ **Easy Customization**
+
+**Nevica** is highly customizable! You can enable or disable features in the `./custom` module, and even override default options using `lib.mkForce`.
+
+Example:
+
+```nix
+nevica.languages.nix.enable = lib.mkForce false;
 ```
 
-You can update your installation with
+You can also add your own Nixvim configurations to create your ideal development environment.
 
-```bash
-nix flake update --extra-experimental-features 'nix-command flakes' --flake github:matteocavestri/nevica
-```
+## 💡 **Contribute to Nevica**
 
-## Supported Languages
+Love Vim and want to help? 🎉 Contributions are more than welcome! Check out the language support table below, and if something is missing or incomplete, feel free to contribute and improve **Nevica**.
 
-| Language       | LSP   | Formatter | Diagnostic | Debugger | Test |
-| -------------- | ----- | --------- | ---------- | -------- | ---- |
-| Bash           | ✅    | ✅        | ✅         | ❌       | ❌   |
-| C              | ✅    | ✅        | ✅         | ✅       | 🔜   |
-| Cpp            | ✅    | ✅        | ✅         | ✅       | 🔜   |
-| Docker         | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Docker Compose | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Golang         | ✅    | ✅ x3     | ✅         | ✅       | ✅   |
-| Java           | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Javascript     | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Kotlin         | ✅    | ✅        | ✅         | ⏰       | ⏰   |
-| Lua            | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Nix            | ✅    | ✅ x3     | ✅         | ❌       | ❌   |
-| Python         | ✅ x2 | ✅        | ✅         | ✅       | ⏰   |
-| Rust           | ✅    | ✅        | ✅         | ✅       | ⏰   |
-| Scala          | ✅    | ✅        | ✅         | ⏰       | ⏰   |
-| Typescript     | ✅    | ✅        | ✅         | ❌       | ❌   |
-| Zig            | ✅    | ✅        | ✅         | 🔜       | 🔜   |
+## 🛠️ **Supported Languages**
 
-## Supported Frameworks
+| 🌐 Language | LSP     | Formatter | Diagnostic | Debugger | Test |
+| ----------- | ------- | --------- | ---------- | -------- | ---- |
+| **C**       | ✅      | ✅        | ✅         | ✅       | 🔜   |
+| **C++**     | ✅      | ✅        | ✅         | ✅       | 🔜   |
+| **Go**      | ✅      | ✅ (x3)   | ✅         | ✅       | ✅   |
+| **Java**    | ✅      | ✅        | ✅         | ✅       | ⏰   |
+| **Nix**     | ✅      | ✅ (x3)   | ✅         | ❌       | ❌   |
+| **Python**  | ✅ (x2) | ✅        | ✅         | ✅       | ⏰   |
+| **Scala**   | ✅      | ✅        | ✅         | ⏰       | ⏰   |
 
-| Framework | LSP | Formatter | Diagnostic | Test |
-| --------- | --- | --------- | ---------- | ---- |
-| Vite      | ❌  | ⏰        | ❌         | ⏰   |
-| Svelte    | ✅  | ⏰        | ❌         | ❌   |
+**Legend**:
 
-Legend:
+- ✅ Full support
+- ❌ Not implemented / Not needed
+- ⏰ Work in progress
+- 🔜 Coming soon
 
-- ✅ --> Full support
-- ❌ --> Not implemented / not needed
-- ⏰ --> Work in progress
-- 🔜 --> Future implementation
+## 📝 **Notes**
 
-If you want to see the details about LSP, debugger, etc., go to [Support Table](https://github.com/matteocavestri/nevica/blob/main/docs/support-table.md)
-
-## Known Issues
-
-- Long startup time due to Neorg.
-  - Solution: lazyload Neorg.
+In the `./oldConfig` directory, you can find the previous Nevica configuration. This version is temporarily kept during the migration phase as some things may still be useful. However, do not rely on this version as it is **deprecated** and will no longer be updated.

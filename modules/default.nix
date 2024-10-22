@@ -82,6 +82,7 @@
         enable = lib.mkDefault true;
         trouble.enable = lib.mkDefault true;
         lspSaga.enable = lib.mkDefault true;
+        fidget.enable = lib.mkDefault true;
       };
       formatting = {
         lspFormat.enable = lib.mkDefault true;
@@ -107,6 +108,8 @@
       golang.enable = lib.mkDefault false;
       cc.enable = lib.mkDefault false;
       python.enable = lib.mkDefault false;
+      java.enable = lib.mkDefault false;
+      scala.enable = lib.mkDefault false;
     };
   };
 }
