@@ -70,3 +70,8 @@ Love Vim and want to help? 🎉 Contributions are more than welcome! Check out t
 ## 📝 **Notes**
 
 In the `./oldConfig` directory, you can find the previous Nevica configuration. This version is temporarily kept during the migration phase as some things may still be useful. However, do not rely on this version as it is **deprecated** and will no longer be updated.
+
+### 🛡️ **Licensing Information**
+
+- The core **Nevica** project is licensed under the **GNU General Public License v2.0 or later** (GPL-2.0-or-later). You can find the full text of the license in the `LICENSE` file.
+- Everything contained in the `./oldConfig` directory is licensed under the **MIT License**.
