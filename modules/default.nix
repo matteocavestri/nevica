@@ -110,6 +110,7 @@
       python.enable = lib.mkDefault false;
       java.enable = lib.mkDefault false;
       scala.enable = lib.mkDefault false;
+      rust.enable = lib.mkDefault false;
     };
   };
 }

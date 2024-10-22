@@ -57,6 +57,7 @@ Love Vim and want to help? 🎉 Contributions are more than welcome! Check out t
 | **Java**    | ✅      | ✅        | ✅         | ✅       | ⏰   |
 | **Nix**     | ✅      | ✅ (x3)   | ✅         | ❌       | ❌   |
 | **Python**  | ✅ (x2) | ✅        | ✅         | ✅       | ⏰   |
+| **Rust**    | ✅      | ⏰        | ✅         | ✅       | ❌   |
 | **Scala**   | ✅      | ✅        | ✅         | ⏰       | ⏰   |
 
 **Legend**:

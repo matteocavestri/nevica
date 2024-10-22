@@ -6,5 +6,6 @@
     ./python.nix
     ./java.nix
     ./scala.nix
+    ./rust.nix
   ];
 }

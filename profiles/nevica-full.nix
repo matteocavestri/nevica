@@ -9,5 +9,6 @@
     python.enable = true;
     java.enable = true;
     scala.enable = true;
+    rust.enable = true;
   };
 }
