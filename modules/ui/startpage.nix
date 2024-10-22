@@ -19,33 +19,39 @@
           change_to_vcs_root = true;
           config = {
             mru = {
-              limit = 10;
+              cwd_only = false;
+              limit = 15;
             };
+            packages.enable = false;
             project = {
               enable = true;
+              limit = 8;
             };
             shortcut = [
               {
                 action = {
                   __raw = "function(path) vim.cmd('Telescope find_files') end";
                 };
-                desc = "Files";
-                group = "Label";
-                icon = " ";
+                group = "highlight group";
+                desc = " Files";
                 icon_hl = "@variable";
                 key = "f";
               }
               {
-                action = "Telescope app";
-                desc = " Apps";
-                group = "DiagnosticHint";
-                key = "a";
+                action = {
+                  __raw = "function(path) vim.cmd('Telescope live_grep') end";
+                };
+                desc = " Grep";
+                group = "highlight group";
+                key = "g";
               }
               {
-                action = "Telescope dotfiles";
-                desc = " dotfiles";
-                group = "Number";
-                key = "d";
+                action = {
+                  __raw = "function(path) vim.cmd('Telescope oldfiles') end";
+                };
+                desc = " Recents";
+                group = "highlight group";
+                key = "r";
               }
             ];
             week_header = {

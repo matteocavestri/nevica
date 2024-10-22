@@ -7,6 +7,9 @@
     ./bufferline-keymaps.nix
     ./debugger-keymaps.nix
     ./languageServer-keymaps.nix
+    ./neotest-keymaps.nix
+    ./git-keymaps.nix
+    ./compiler-keymaps.nix
   ];
 
   globals.mapleader = " ";

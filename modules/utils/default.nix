@@ -5,5 +5,6 @@
     ./notify.nix
     ./terminal.nix
     ./generalPlugins.nix
+    ./git.nix
   ];
 }

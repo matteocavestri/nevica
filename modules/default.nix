@@ -65,6 +65,12 @@
       generalPlugins = {
         tmuxNavigator.enable = lib.mkDefault true;
       };
+      git = {
+        gitsigns.enable = lib.mkDefault true;
+        diffview.enable = lib.mkDefault true;
+        neogit.enable = lib.mkDefault false;
+        lazygit.enable = lib.mkDefault true;
+      };
     };
 
     # NEVICA CODEUTILS DEFAULT VALUES
@@ -87,6 +93,7 @@
         virtualText.enable = lib.mkDefault true;
       };
       testing.neotest.enable = lib.mkDefault true;
+      compiling.compiler.enable = lib.mkDefault true;
     };
 
     # NEVICA MAPPINGS DEFAULT VALUES

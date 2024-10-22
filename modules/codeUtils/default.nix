@@ -7,5 +7,6 @@
     ./formatting.nix
     ./debugging.nix
     ./testing.nix
+    ./compiling.nix
   ];
 }
