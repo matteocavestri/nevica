@@ -33,16 +33,23 @@
           module = import ./profiles/nevica.nix; # import nevica default profile
           extraSpecialArgs = {};
         };
+        nixvimModuleFull = {
+          inherit pkgs;
+          module = import ./profiles/nevica-full.nix; # import nevica full profile
+          extraSpecialArgs = {};
+        };
         nvim = nixvim'.makeNixvimWithModule nixvimModuleDefault;
+        nvimFull = nixvim'.makeNixvimWithModule nixvimModuleFull;
       in {
         checks = {
           default =
             nixvimLib.check.mkTestDerivationFromNixvimModule
-            nixvimModuleDefault;
+            nixvimModuleFull;
         };
 
         packages = {
           nevica = nvim;
+          nevica-full = nvimFull;
         };
       };
     };
