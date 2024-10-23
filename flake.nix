@@ -38,8 +38,14 @@
           module = import ./profiles/nevica-full.nix; # import nevica full profile
           extraSpecialArgs = {};
         };
+        nixvimModuleGo = {
+          inherit pkgs;
+          module = import ./profiles/nevica-full.nix; # import nevica go profile
+          extraSpecialArgs = {};
+        };
         nvim = nixvim'.makeNixvimWithModule nixvimModuleDefault;
         nvimFull = nixvim'.makeNixvimWithModule nixvimModuleFull;
+        nvimGo = nixvim'.makeNixvimWithModule nixvimModuleGo;
       in {
         checks = {
           default =
@@ -50,6 +56,7 @@
         packages = {
           nevica = nvim;
           nevica-full = nvimFull;
+          nevica-go = nvimGo;
         };
       };
     };
