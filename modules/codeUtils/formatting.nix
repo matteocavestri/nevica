@@ -25,7 +25,17 @@
           update_in_insert = false;
         };
         sources = {
-          formatting = {};
+          formatting = {
+            # Markdown and Yaml formatting are enabled by default
+            mdformat = {
+              enable = true;
+              package = pkgs.mdformat;
+            };
+            yamlfmt = {
+              enable = true;
+              package = pkgs.yamlfmt;
+            };
+          };
         };
       };
     };
