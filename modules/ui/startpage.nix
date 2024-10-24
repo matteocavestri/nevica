@@ -20,12 +20,12 @@
           config = {
             mru = {
               cwd_only = false;
-              limit = 15;
+              limit = 12;
             };
             packages.enable = false;
             project = {
               enable = true;
-              limit = 8;
+              limit = 5;
             };
             shortcut = [
               {
