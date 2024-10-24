@@ -12,24 +12,22 @@
       treesitter.settings.ensure_installed = [
         "nix"
       ];
-      lsp.servers.nil_ls = {
+      lsp.servers.nixd = {
+        package = pkgs.nixd;
         enable = true;
-        package = pkgs.nil;
-        filetypes = ["nix"];
-        settings.nix.flake.autoArchive = true;
+        settings = {
+          nixpkgs = {
+            expr = "import <nixpkgs> { }";
+          };
+          formatting = {
+            command = ["alejandra"];
+          };
+        };
       };
       none-ls.sources = {
-        diagnostics.statix = {
-          enable = true;
-          package = pkgs.statix;
-        };
         formatting.alejandra = {
           enable = true;
           package = pkgs.alejandra;
-        };
-        code_actions.statix = {
-          enable = true;
-          package = pkgs.statix;
         };
       };
     };
