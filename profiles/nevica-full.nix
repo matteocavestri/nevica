@@ -10,5 +10,6 @@
     java.enable = true;
     scala.enable = true;
     rust.enable = true;
+    iac.enable = true;
   };
 }

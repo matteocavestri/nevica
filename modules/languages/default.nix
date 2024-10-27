@@ -7,5 +7,6 @@
     ./java.nix
     ./scala.nix
     ./rust.nix
+    ./iac.nix
   ];
 }
