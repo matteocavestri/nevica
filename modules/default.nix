@@ -64,6 +64,8 @@
       };
       generalPlugins = {
         tmuxNavigator.enable = lib.mkDefault true;
+        tagbar.enable = lib.mkDefault false;
+        todoComments.enable = lib.mkDefault true;
       };
       git = {
         gitsigns.enable = lib.mkDefault true;
@@ -111,6 +113,7 @@
       java.enable = lib.mkDefault false;
       scala.enable = lib.mkDefault false;
       rust.enable = lib.mkDefault false;
+      iac.enable = lib.mkDefault false;
     };
   };
 }

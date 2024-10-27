@@ -10,6 +10,7 @@
     ./neotest-keymaps.nix
     ./git-keymaps.nix
     ./compiler-keymaps.nix
+    ./tagbar-keymaps.nix
   ];
 
   globals.mapleader = " ";
