@@ -12,5 +12,7 @@
     rust.enable = true;
     iac.enable = true;
     typescript.enable = true;
+    templ.enable = true;
+    web.enable = true;
   };
 }

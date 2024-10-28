@@ -9,5 +9,7 @@
     ./rust.nix
     ./iac.nix
     ./typescript.nix
+    ./templ.nix
+    ./web.nix
   ];
 }

@@ -9,6 +9,10 @@
   };
   config = lib.mkIf config.nevica.languages.typescript.enable {
     plugins = {
+      treesitter.settings.ensure_installed = [
+        "typescript"
+        "javascript"
+      ];
       typescript-tools = {
         enable = true;
         package = pkgs.vimPlugins.typescript-tools-nvim;

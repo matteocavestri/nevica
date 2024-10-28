@@ -115,6 +115,8 @@
       rust.enable = lib.mkDefault false;
       iac.enable = lib.mkDefault false;
       typescript.enable = lib.mkDefault false;
+      templ.enable = lib.mkDefault false;
+      web.enable = lib.mkDefault false;
     };
   };
 }
