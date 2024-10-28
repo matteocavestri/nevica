@@ -20,15 +20,14 @@
             expr = "import <nixpkgs> { }";
           };
           formatting = {
-            command = ["alejandra"];
+            command = ["${pkgs.alejandra}/bin/alejandra"];
           };
         };
       };
-      none-ls.sources = {
-        formatting.alejandra = {
-          enable = true;
-          package = pkgs.alejandra;
-        };
+      lsp-format = {
+        lspServersToEnable = [
+          "nixd"
+        ];
       };
     };
   };
