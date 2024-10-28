@@ -40,12 +40,18 @@
         };
         nixvimModuleGo = {
           inherit pkgs;
-          module = import ./profiles/nevica-full.nix; # import nevica go profile
+          module = import ./profiles/nevica-go.nix; # import nevica go profile
+          extraSpecialArgs = {};
+        };
+        nixvimModuleGoWeb = {
+          inherit pkgs;
+          module = import ./profiles/nevica-goweb.nix; # import nevica goweb profile
           extraSpecialArgs = {};
         };
         nvim = nixvim'.makeNixvimWithModule nixvimModuleDefault;
         nvimFull = nixvim'.makeNixvimWithModule nixvimModuleFull;
         nvimGo = nixvim'.makeNixvimWithModule nixvimModuleGo;
+        nvimGoWeb = nixvim'.makeNixvimWithModule nixvimModuleGoWeb;
       in {
         checks = {
           default =
@@ -57,6 +63,7 @@
           nevica = nvim;
           nevica-full = nvimFull;
           nevica-go = nvimGo;
+          nevica-goweb = nvimGoWeb;
         };
       };
     };

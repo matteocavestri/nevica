@@ -8,5 +8,6 @@
     ./scala.nix
     ./rust.nix
     ./iac.nix
+    ./typescript.nix
   ];
 }

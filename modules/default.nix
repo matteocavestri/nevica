@@ -114,6 +114,7 @@
       scala.enable = lib.mkDefault false;
       rust.enable = lib.mkDefault false;
       iac.enable = lib.mkDefault false;
+      typescript.enable = lib.mkDefault false;
     };
   };
 }
