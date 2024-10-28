@@ -26,6 +26,10 @@
           enable = true;
           package = pkgs.htmx-lsp;
         };
+        tailwindcss = {
+          enable = true;
+          package = pkgs.tailwindcss-language-server;
+        };
       };
     };
   };
