@@ -55,7 +55,7 @@
       # Enable 24-bit colors
       termguicolors = true;
       # Always keep 8 lines above/below cursor unless at start/end of file
-      scrolloff = 8;
+      scrolloff = 5;
       # Set encoding type
       encoding = "utf-8";
       fileencoding = "utf-8";
